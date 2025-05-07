@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Queans.Api.Users
@@ -7,10 +8,18 @@ namespace Queans.Api.Users
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly ISender _sender;
+
+        public UserController(ISender sender)
+        {
+            _sender = sender;
+        }
+
         [HttpPost]
         [Route("Register")]
         public IActionResult Register(RegisterUserRequest request)
         {
+
             return Ok(request);
         }
 

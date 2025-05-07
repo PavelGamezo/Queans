@@ -1,24 +1,38 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Queans.Domain.Common;
 using Queans.Domain.Users;
 using Queans.Infrastructure.Persistence.Configurations;
+using Queans.Infrastructure.Persistence.Interceptors;
 
 namespace Queans.Infrastructure.Persistence.Contexts
 {
     public class QueansDbContext : DbContext
     {
+        private readonly PublishDomainEventsInterseptor _publishDomainEventsInterseptor;
+
         public DbSet<User> Users { get; set; }
 
-        public QueansDbContext(DbContextOptions options) : base(options)
+        public QueansDbContext(DbContextOptions options,
+            PublishDomainEventsInterseptor publishDomainEventsInterseptor) : base(options)
         {
+            _publishDomainEventsInterseptor = publishDomainEventsInterseptor;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var userConfiguration = new UserConfiguration();
 
-            modelBuilder.ApplyConfiguration(userConfiguration);
+            modelBuilder
+                .Ignore<List<IDomainEvent>>()
+                .ApplyConfiguration(userConfiguration);
 
             base.OnModelCreating(modelBuilder);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.AddInterceptors(_publishDomainEventsInterseptor);
+            base.OnConfiguring(optionsBuilder);
         }
     }
 }

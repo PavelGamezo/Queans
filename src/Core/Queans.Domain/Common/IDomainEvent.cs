@@ -1,6 +1,8 @@
-﻿namespace Queans.Domain.Common
+﻿using MediatR;
+
+namespace Queans.Domain.Common
 {
-    public interface IDomainEvent
+    public interface IDomainEvent : INotification
     {
     }
 }

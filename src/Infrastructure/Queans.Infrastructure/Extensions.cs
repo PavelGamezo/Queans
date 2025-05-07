@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Queans.Infrastructure.Common.Options;
 using Queans.Infrastructure.Persistence.Contexts;
+using Queans.Infrastructure.Persistence.Interceptors;
 
 namespace Queans.Infrastructure
 {
@@ -20,10 +21,25 @@ namespace Queans.Infrastructure
             // Add options
             services.AddSingleton(Options.Create(connectionString));
 
+            services.AddPersistence(connectionString.Value);
+
+            return services;
+        }
+
+        public static IServiceCollection AddPersistence(
+            this IServiceCollection services,
+            string connectionString)
+        {
+            // Added DbContext
             services.AddDbContext<QueansDbContext>(options =>
             {
-                options.UseNpgsql(connectionString.Value);
+                options.UseNpgsql(connectionString);
             });
+
+            // Added services
+            services.AddScoped<PublishDomainEventsInterseptor>();
+
+            // Added repositories
 
             return services;
         }
