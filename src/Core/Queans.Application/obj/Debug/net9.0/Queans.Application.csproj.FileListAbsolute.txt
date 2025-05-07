@@ -9,3 +9,16 @@ D:\Программирование\C#\Projects\Queans\src\Core\Queans.Applicati
 D:\Программирование\C#\Projects\Queans\src\Core\Queans.Application\obj\Debug\net9.0\refint\Queans.Application.dll
 D:\Программирование\C#\Projects\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.pdb
 D:\Программирование\C#\Projects\Queans\src\Core\Queans.Application\obj\Debug\net9.0\ref\Queans.Application.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\bin\Debug\net9.0\Queans.Application.deps.json
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\bin\Debug\net9.0\Queans.Application.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\bin\Debug\net9.0\Queans.Application.pdb
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.csproj.AssemblyReference.cache
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.AssemblyInfoInputs.cache
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.AssemblyInfo.cs
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.csproj.CoreCompileInputs.cache
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.sourcelink.json
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\refint\Queans.Application.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.pdb
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\ref\Queans.Application.dll

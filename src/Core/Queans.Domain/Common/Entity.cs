@@ -3,12 +3,24 @@
     public abstract class Entity<TId> : IEquatable<Entity<TId>>
         where TId : notnull
     {
-        public TId Id { get; init; }
+        public TId Id { get; protected set; }
+
+        private readonly List<IDomainEvent> _domainEvents = new();
 
         protected Entity(TId id)
         {
             Id = id;
         }
+
+        public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
+
+        public void AddDomainEvent(IDomainEvent domainEvent)
+        {
+            _domainEvents.Add(domainEvent);
+        }
+
+        public void ClearDomainEvents() =>
+            _domainEvents.Clear();
 
         public override bool Equals(object? obj)
         {

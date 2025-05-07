@@ -1,6 +1,6 @@
 ﻿using ErrorOr;
 using Queans.Domain.Common;
-using Queans.Domain.Users.Errors;
+using Queans.Domain.Users.Events;
 using Queans.Domain.Users.ValueObjects;
 
 namespace Queans.Domain.Users
@@ -16,12 +16,13 @@ namespace Queans.Domain.Users
         public Rating Rating { get; private set; } = 0;
 
 
-        public User(Guid userId,
+        public User(
+            Guid id,
             string userName,
-            string userEmail,
+            Email userEmail,
             string passwordHash,
-            int rating) 
-            : base(userId)
+            Rating rating) 
+            : base(id)
         {
             UserName = userName;
             UserEmail = userEmail;
@@ -29,7 +30,7 @@ namespace Queans.Domain.Users
             Rating = rating;
         }
 
-
+        private User(Guid userId) : base(userId) { }
 
         public static ErrorOr<User> Create(string userName, string userEmail, string passwordHash, int rating)
         {
@@ -47,7 +48,11 @@ namespace Queans.Domain.Users
                 return ratingResult.Errors;
             }
 
-            return new User(identifier, userName, emailResult.Value, passwordHash, ratingResult.Value);
+            var user =  new User(identifier, userName, emailResult.Value, passwordHash, ratingResult.Value);
+
+            user.AddDomainEvent(new UserRegisteredEvent(user));
+
+            return user;
         }
     }
 }

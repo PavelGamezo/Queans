@@ -1,0 +1,13 @@
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\bin\Debug\net9.0\Queans.Domain.deps.json
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\bin\Debug\net9.0\Queans.Domain.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\bin\Debug\net9.0\Queans.Domain.pdb
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.csproj.AssemblyReference.cache
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.AssemblyInfoInputs.cache
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.AssemblyInfo.cs
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.csproj.CoreCompileInputs.cache
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.sourcelink.json
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\refint\Queans.Domain.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\Queans.Domain.pdb
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Domain\obj\Debug\net9.0\ref\Queans.Domain.dll
