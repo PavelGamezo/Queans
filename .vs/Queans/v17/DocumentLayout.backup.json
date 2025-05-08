@@ -3,32 +3,64 @@
   "WorkspaceRootPath": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\users\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\users\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\persistence\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\persistence\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\common\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\common\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\users\\events\\userregisteredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\users\\events\\userregisteredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\persistence\\contexts\\queansdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\persistence\\contexts\\queansdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.application\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|solutionrelative:src\\core\\queans.application\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.application\\queans.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|solutionrelative:src\\core\\queans.application\\queans.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\persistence\\interceptors\\publishdomaineventsinterseptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\persistence\\interceptors\\publishdomaineventsinterseptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\common\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\common\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\common\\ihasdomainevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\common\\ihasdomainevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\persistence\\contexts\\queansdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\persistence\\contexts\\queansdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\migrations\\20250507104145_initialmigrationwithuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\migrations\\20250507104145_initialmigrationwithuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\persistence\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\persistence\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\common\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\common\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,24 +71,12 @@
       "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.application\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|solutionrelative:src\\core\\queans.application\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\infrastructure\\queans.infrastructure\\common\\options\\connectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5445206-F034-4964-8C75-F49D51AF04CD}|src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj|solutionrelative:src\\infrastructure\\queans.infrastructure\\common\\options\\connectionstring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\users\\events\\userregisteredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\users\\events\\userregisteredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\common\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|solutionrelative:src\\core\\queans.domain\\common\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE3B618B-E340-4E10-8B8B-A98C65584E31}|src\\Core\\Queans.Domain\\Queans.Domain.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\core\\queans.domain\\users\\valueobjects\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,14 +103,6 @@
       "RelativeMoniker": "D:0:0:{D500662B-16F6-4486-8A12-5C6D0DDA9BAB}|src\\Core\\Queans.Application\\Queans.Application.csproj|solutionrelative:src\\core\\queans.application\\users\\commands\\registeruser\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\users\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\users\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|d:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\c#\\projects\\queans\\queans\\src\\presentation\\queans.api\\users\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55AB18A4-5920-4776-97B3-65BA88B75B46}|src\\Presentation\\Queans.Api\\Queans.Api.csproj|solutionrelative:src\\presentation\\queans.api\\users\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -106,167 +118,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250507104145_InitialMigrationWithUser.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:41:45.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T09:00:36.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Program.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Program.cs",
-              "RelativeToolTip": "src\\Presentation\\Queans.Api\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:30:02.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\User.cs",
               "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\User.cs",
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\User.cs",
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\User.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T08:47:23.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T08:47:58.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "QueansDbContext.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T08:35:08.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AggregateRoot.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:48:59.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\Entity.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\Entity.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\Entity.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:20:58.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ConnectionString.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T09:21:15.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\appsettings.json",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\appsettings.json",
-              "RelativeToolTip": "src\\Presentation\\Queans.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T10:12:51.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Extensions.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Extensions.cs",
               "RelativeDocumentMoniker": "src\\Core\\Queans.Application\\Extensions.cs",
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Extensions.cs",
               "RelativeToolTip": "src\\Core\\Queans.Application\\Extensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T10:32:25.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Extensions.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Extensions.cs",
-              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Extensions.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Extensions.cs",
-              "RelativeToolTip": "src\\Presentation\\Queans.Api\\Extensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Extensions.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwCcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:34:20.557Z",
+              "WhenOpened": "2025-05-07T09:00:36.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
+              "Title": "QueansDbContext.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Contexts\\QueansDbContext.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvxkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T08:35:08.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserRegisteredEvent.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\Events\\UserRegisteredEvent.cs",
               "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\Events\\UserRegisteredEvent.cs",
@@ -279,111 +187,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "IDomainEvent.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\IDomainEvent.cs",
               "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\IDomainEvent.cs",
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\IDomainEvent.cs",
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\IDomainEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T08:00:33.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Rating.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:20:43.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Email.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:15:20.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ValueObject.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwBAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:33:59.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RegisterUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:46:17.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserDomainErrors.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:00:25.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegisterUserCommand.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
-              "RelativeToolTip": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:44:28.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "LoginUserRequest.cs",
-              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
-              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
-              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
-              "RelativeToolTip": "src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:41:43.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 1,
               "Title": "RegisterUserRequest.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\RegisterUserRequest.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Users\\RegisterUserRequest.cs",
@@ -396,20 +213,254 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\UserController.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Users\\UserController.cs",
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\UserController.cs",
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Users\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T09:36:11.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Queans.Application",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Application\\Queans.Application.csproj",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj",
+              "RelativeToolTip": "src\\Core\\Queans.Application\\Queans.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T13:04:45.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PublishDomainEventsInterseptor.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Interceptors\\PublishDomainEventsInterseptor.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Interceptors\\PublishDomainEventsInterseptor.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Interceptors\\PublishDomainEventsInterseptor.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Interceptors\\PublishDomainEventsInterseptor.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:12:22.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\Entity.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\Entity.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\Entity.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\Entity.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAIAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:20:58.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IHasDomainEvents.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\IHasDomainEvents.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\IHasDomainEvents.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\IHasDomainEvents.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\IHasDomainEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:42:27.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250507104145_InitialMigrationWithUser.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Migrations\\20250507104145_InitialMigrationWithUser.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T10:41:45.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T08:47:58.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AggregateRoot.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\AggregateRoot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:48:59.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Program.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Program.cs",
+              "RelativeToolTip": "src\\Presentation\\Queans.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:30:02.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ConnectionString.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Common\\Options\\ConnectionString.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:21:15.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\appsettings.json",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\appsettings.json",
+              "RelativeToolTip": "src\\Presentation\\Queans.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T10:12:51.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Extensions.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Extensions.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Extensions.cs",
+              "RelativeToolTip": "src\\Presentation\\Queans.Api\\Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:34:20.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T13:20:43.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Email.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T12:15:20.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ValueObject.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Common\\ValueObject.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwBAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:33:59.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "RegisterUserCommandHandler.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:46:17.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserDomainErrors.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\Errors\\UserDomainErrors.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T13:00:25.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegisterUserCommand.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
+              "RelativeToolTip": "src\\Core\\Queans.Application\\Users\\Commands\\RegisterUser\\RegisterUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:44:28.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginUserRequest.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
+              "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
+              "RelativeToolTip": "src\\Presentation\\Queans.Api\\Users\\LoginUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T09:41:43.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "Queans.Api.csproj",
               "DocumentMoniker": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
               "RelativeDocumentMoniker": "src\\Presentation\\Queans.Api\\Queans.Api.csproj",

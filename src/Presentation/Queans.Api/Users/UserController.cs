@@ -1,12 +1,12 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Queans.Api.Common.Errors;
 
 namespace Queans.Api.Users
 {
     [Route("[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+    public class UserController : ApiBaseController
     {
         private readonly ISender _sender;
 

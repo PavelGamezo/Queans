@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\CQRS\" />
     <Folder Include="Users\Queries\" />
   </ItemGroup>
 
