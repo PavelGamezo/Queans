@@ -1,14 +1,57 @@
-﻿using MediatR;
+﻿using ErrorOr;
+using Queans.Application.Common.CQRS.Commands;
+using Queans.Application.Common.DTOs;
+using Queans.Application.Common.Errors;
+using Queans.Application.Common.Persistence;
+using Queans.Domain.Users;
 
 namespace Queans.Application.Users.Commands.RegisterUser
 {
-    public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand>
+    public class RegisterUserCommandHandler : ICommandHandler<RegisterUserCommand, ErrorOr<UserDto>>
     {
-        public Task Handle(RegisterUserCommand request, CancellationToken cancellationToken)
-        {
-            var (userName, userEmail, password) = request;
+        private const int INITIAL_USER_RATING = 0;
 
-            return Task.CompletedTask;
+        private readonly IUserRepository _userRepository;
+
+        public RegisterUserCommandHandler(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
+        public async Task<ErrorOr<UserDto>> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
+        {
+            var (username, email, password) = request;
+
+            if (await _userRepository.GetUserByEmailAsync(
+                email, cancellationToken) is not null ||
+                await _userRepository.GetUserByUserNameAsync(
+                username, cancellationToken) is not null)
+            {
+                return ApplicationErrors.UserExistError;
+            }
+
+            // TODO: Implement password hashing 
+            // var passwordHash = _passwordHashService.HashPassword(password);
+
+            var userCreationResult = User.Create(
+                username,
+                email,
+                password,
+                INITIAL_USER_RATING);
+
+            if (userCreationResult.IsError)
+            {
+                return userCreationResult.Errors;
+            }
+
+            var user = userCreationResult.Value;
+
+            await _userRepository.AddAsync(user, cancellationToken);
+
+            return new UserDto(
+                UserName: user.UserName,
+                Email: user.UserEmail,
+                Rating: user.Rating);
         }
     }
 }

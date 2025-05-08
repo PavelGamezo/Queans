@@ -1011,9 +1011,11 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "CSharpFunctionalExtensions": "3.6.0",
+          "ErrorOr": "2.0.1",
           "MediatR": "12.5.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.4"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.4",
+          "Queans.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Queans.Application.dll": {}

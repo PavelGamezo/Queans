@@ -31,7 +31,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
+                "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -53,6 +57,10 @@
             "CSharpFunctionalExtensions": {
               "target": "Package",
               "version": "[3.6.0, )"
+            },
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[2.0.1, )"
             },
             "MediatR": {
               "target": "Package",

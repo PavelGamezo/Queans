@@ -2,9 +2,11 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Queans.Application.Common.Persistence;
 using Queans.Infrastructure.Common.Options;
 using Queans.Infrastructure.Persistence.Contexts;
 using Queans.Infrastructure.Persistence.Interceptors;
+using Queans.Infrastructure.Persistence.Repositories;
 
 namespace Queans.Infrastructure
 {
@@ -40,6 +42,7 @@ namespace Queans.Infrastructure
             services.AddScoped<PublishDomainEventsInterseptor>();
 
             // Added repositories
+            services.AddScoped<IUserRepository, UserRepository>();
 
             return services;
         }

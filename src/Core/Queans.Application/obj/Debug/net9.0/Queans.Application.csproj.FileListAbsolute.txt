@@ -22,3 +22,6 @@ D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Ap
 D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\refint\Queans.Application.dll
 D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.Application.pdb
 D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\ref\Queans.Application.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\bin\Debug\net9.0\Queans.Domain.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\bin\Debug\net9.0\Queans.Domain.pdb
+D:\Программирование\C#\Projects\Queans\Queans\src\Core\Queans.Application\obj\Debug\net9.0\Queans.A.713A44B0.Up2Date

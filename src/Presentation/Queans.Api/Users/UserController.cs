@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Queans.Api.Common.Errors;
+using Queans.Application.Users.Commands.RegisterUser;
 
 namespace Queans.Api.Users
 {
@@ -17,10 +18,17 @@ namespace Queans.Api.Users
 
         [HttpPost]
         [Route("Register")]
-        public IActionResult Register(RegisterUserRequest request)
+        public async Task<IActionResult> Register(RegisterUserRequest request)
         {
+            var result = await _sender.Send(
+                new RegisterUserCommand
+                    (request.UserName,
+                    request.UserEmail,
+                    request.Password));
 
-            return Ok(request);
+            return result.Match(
+                onValueResult => Ok(onValueResult),
+                onErrorResult => Problem(onErrorResult));
         }
 
         [HttpGet]

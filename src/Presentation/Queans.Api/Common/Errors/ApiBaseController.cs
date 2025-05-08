@@ -7,7 +7,7 @@ namespace Queans.Api.Common.Errors
     [ApiController]
     public class ApiBaseController : ControllerBase
     {
-        public IActionResult Problem(List<Error> errors)
+        protected IActionResult Problem(List<Error> errors)
         {
             if (errors.Count == 0)
             {
@@ -22,12 +22,13 @@ namespace Queans.Api.Common.Errors
             return Problem(errors.First());
         }
 
-        public IActionResult Problem(Error error)
+        private IActionResult Problem(Error error)
         {
             var statusCode = error.Type switch
             {
                 ErrorType.Conflict => StatusCodes.Status409Conflict,
                 ErrorType.Unauthorized => StatusCodes.Status401Unauthorized,
+                ErrorType.Validation => StatusCodes.Status401Unauthorized,
                 ErrorType.Failure => StatusCodes.Status400BadRequest,
                 ErrorType.NotFound => StatusCodes.Status404NotFound,
                 _ => StatusCodes.Status500InternalServerError,
@@ -36,7 +37,7 @@ namespace Queans.Api.Common.Errors
             return Problem(statusCode: statusCode, title: error.Description);
         }
 
-        public IActionResult ValidationProblem(List<Error> errors)
+        private IActionResult ValidationProblem(List<Error> errors)
         {
             var modelState = new ModelStateDictionary();
 

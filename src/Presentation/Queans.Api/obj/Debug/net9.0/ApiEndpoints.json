@@ -30,7 +30,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Queans.Api.Users.RegisterRequest",
+        "Type": "Queans.Api.Users.RegisterUserRequest",
         "IsRequired": true
       }
     ],

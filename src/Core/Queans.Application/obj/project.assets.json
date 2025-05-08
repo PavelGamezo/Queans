@@ -15,6 +15,19 @@
           }
         }
       },
+      "ErrorOr/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/12.5.0": {
         "type": "package",
         "dependencies": {
@@ -73,6 +86,21 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Queans.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CSharpFunctionalExtensions": "3.6.0",
+          "ErrorOr": "2.0.1",
+          "MediatR": "12.5.0"
+        },
+        "compile": {
+          "bin/placeholder/Queans.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Queans.Domain.dll": {}
+        }
       }
     }
   },
@@ -95,6 +123,23 @@
         "lib/netstandard2.0/CSharpFunctionalExtensions.dll",
         "lib/netstandard2.0/CSharpFunctionalExtensions.pdb",
         "lib/netstandard2.0/CSharpFunctionalExtensions.xml"
+      ]
+    },
+    "ErrorOr/2.0.1": {
+      "sha512": "aje9lUVEAsusPFmaRcVM5EUqWBofd7hYtb9N8+ycgPYrtOzyFajMpzRgIO4uuiCllNLBc3x48+cpA+4v4koUDQ==",
+      "type": "package",
+      "path": "erroror/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "erroror.2.0.1.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml",
+        "lib/netstandard2.0/ErrorOr.dll",
+        "lib/netstandard2.0/ErrorOr.xml"
       ]
     },
     "MediatR/12.5.0": {
@@ -170,14 +215,21 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Queans.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Queans.Domain/Queans.Domain.csproj",
+      "msbuildProject": "../Queans.Domain/Queans.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "CSharpFunctionalExtensions >= 3.6.0",
+      "ErrorOr >= 2.0.1",
       "MediatR >= 12.5.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.4"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.4",
+      "Queans.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -211,7 +263,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
+              "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -233,6 +289,10 @@
           "CSharpFunctionalExtensions": {
             "target": "Package",
             "version": "[3.6.0, )"
+          },
+          "ErrorOr": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "MediatR": {
             "target": "Package",

@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Core\Queans.Application\Queans.Application.csproj" />
     <ProjectReference Include="..\..\Core\Queans.Domain\Queans.Domain.csproj" />
   </ItemGroup>
