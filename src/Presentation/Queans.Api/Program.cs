@@ -1,18 +1,15 @@
 using Queans.Api;
+using Queans.Api.Common.GlobalExceptions;
 using Queans.Application;
 using Queans.Infrastructure;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-
 builder.Services
+    .AddPresentation()
     .AddApplication()
-    .AddInfrastructure(builder.Configuration)
-    .AddPresentation();
-
-builder.Services.AddOpenApi();
+    .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
@@ -25,6 +22,8 @@ if (app.Environment.IsDevelopment())
         options.HideDownloadButton = true;
     });
 }
+
+app.UseMiddleware<GlobalExceptionHandler>();
 
 app.UseHttpsRedirection();
 

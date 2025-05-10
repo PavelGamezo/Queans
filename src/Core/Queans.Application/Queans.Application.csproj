@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\Behaviors\" />
     <Folder Include="Users\Queries\" />
   </ItemGroup>
 

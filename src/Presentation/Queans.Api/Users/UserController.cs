@@ -20,11 +20,10 @@ namespace Queans.Api.Users
         [Route("Register")]
         public async Task<IActionResult> Register(RegisterUserRequest request)
         {
-            var result = await _sender.Send(
-                new RegisterUserCommand
-                    (request.UserName,
-                    request.UserEmail,
-                    request.Password));
+            var result = await _sender.Send(new RegisterUserCommand(
+                request.UserName,
+                request.UserEmail,
+                request.Password));
 
             return result.Match(
                 onValueResult => Ok(onValueResult),
