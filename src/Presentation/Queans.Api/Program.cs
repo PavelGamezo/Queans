@@ -20,6 +20,7 @@ if (app.Environment.IsDevelopment())
     {
         options.HideClientButton = true;
         options.HideDownloadButton = true;
+        
     });
 }
 
@@ -27,6 +28,8 @@ app.UseMiddleware<GlobalExceptionHandler>();
 
 app.UseHttpsRedirection();
 
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

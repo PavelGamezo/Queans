@@ -1,8 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Queans.Api.Common.Errors;
 using Queans.Application.Users.Commands.RegisterUser;
+using Queans.Application.Users.Queries.LoginUser;
 
 namespace Queans.Api.Users
 {
@@ -32,9 +33,22 @@ namespace Queans.Api.Users
 
         [HttpGet]
         [Route("Login")]
-        public IActionResult Login([FromQuery]LoginUserRequest request)
+        public async Task<IActionResult> Login([FromQuery]LoginUserRequest request)
         {
-            return Ok(request);
+            var result = await _sender.Send(new LoginUserQuery(
+                request.UserEmail,
+                request.Password));
+
+            return result.Match(
+                onValueResult => Ok(onValueResult),
+                onErrorResult => Problem(onErrorResult));
+        }
+
+        [Authorize]
+        [HttpGet]
+        public IActionResult GetUser()
+        {
+            return Ok();
         }
     }
 }

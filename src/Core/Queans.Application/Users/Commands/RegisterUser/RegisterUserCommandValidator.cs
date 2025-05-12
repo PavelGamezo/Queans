@@ -7,8 +7,8 @@ namespace Queans.Application.Users.Commands.RegisterUser
         public RegisterUserCommandValidator()
         {
             RuleFor(x => x.UserEmail)
-            .NotEmpty().WithMessage("Email is required.")
-            .EmailAddress().WithMessage("Email must be valid.");
+                .NotEmpty().WithMessage("Email is required.")
+                .EmailAddress().WithMessage("Email must be valid.");
 
             RuleFor(x => x.UserName)
                 .NotEmpty().WithMessage("User name is required.")

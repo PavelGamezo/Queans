@@ -67,7 +67,7 @@ namespace Queans.Api.Common.GlobalExceptions
                 Title = reasonPhrase,
             };
 
-            problemDetails.Detail = exception.ToString();
+            problemDetails.Detail = exception.Message;
             problemDetails.Extensions["traceId"] = context.TraceIdentifier;
             problemDetails.Extensions["data"] = exception.Data;
 

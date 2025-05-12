@@ -1,12 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Queans.Application.Common.Authentications;
 using Queans.Application.Common.Persistence;
+using Queans.Infrastructure.Authentication;
 using Queans.Infrastructure.Common.Options;
 using Queans.Infrastructure.Persistence.Contexts;
 using Queans.Infrastructure.Persistence.Interceptors;
 using Queans.Infrastructure.Persistence.Repositories;
+using System.Text;
 
 namespace Queans.Infrastructure
 {
@@ -16,29 +21,68 @@ namespace Queans.Infrastructure
             this IServiceCollection services,
             IConfiguration configuration)
         {
-            // create options object
-            var connectionString = new ConnectionString();
-            configuration.Bind(ConnectionString.SectionName, connectionString);
+            services.AddPersistence(configuration);
 
-            // Add options
-            services.AddSingleton(Options.Create(connectionString));
+            services.AddJwtAuthentication(configuration);
 
-            services.AddPersistence(connectionString.Value);
+            return services;
+        }
+
+        public static IServiceCollection AddJwtAuthentication(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            var jwtOptions = new JwtSettings();
+            configuration.Bind(JwtSettings.SectionName, jwtOptions);
+
+            services.AddSingleton(Options.Create(jwtOptions));
+
+            services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = false,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = jwtOptions.Issuer,
+                        ValidAudience = jwtOptions.Audience,
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                            Encoding.UTF8.GetBytes(jwtOptions.Secret))
+                    };
+
+                    //options.Events = new JwtBearerEvents()
+                    //{
+                    //    OnMessageReceived = context =>
+                    //    {
+                    //        context.Token = context.Request.Cookies["gym-cookies"];
+
+                    //        return Task.CompletedTask;
+                    //    }
+                    //};
+                });
 
             return services;
         }
 
         public static IServiceCollection AddPersistence(
             this IServiceCollection services,
-            string connectionString)
+            IConfiguration configuration)
         {
+            var connectionString = new ConnectionString();
+            configuration.Bind(ConnectionString.SectionName, connectionString);
+
+            services.AddSingleton(Options.Create(connectionString));
+
             // Added DbContext
             services.AddDbContext<QueansDbContext>(options =>
             {
-                options.UseNpgsql(connectionString);
+                options.UseNpgsql(connectionString.Value);
             });
 
-            // Added services
             services.AddScoped<PublishDomainEventsInterseptor>();
 
             // Added repositories

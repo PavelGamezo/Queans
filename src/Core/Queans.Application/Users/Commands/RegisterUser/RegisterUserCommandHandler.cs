@@ -49,6 +49,7 @@ namespace Queans.Application.Users.Commands.RegisterUser
             await _userRepository.AddAsync(user, cancellationToken);
 
             return new UserDto(
+                Id: user.Id,
                 UserName: user.UserName,
                 Email: user.UserEmail,
                 Rating: user.Rating);

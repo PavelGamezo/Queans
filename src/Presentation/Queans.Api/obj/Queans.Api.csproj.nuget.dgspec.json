@@ -235,9 +235,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "CSharpFunctionalExtensions": {
               "target": "Package",
               "version": "[3.6.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

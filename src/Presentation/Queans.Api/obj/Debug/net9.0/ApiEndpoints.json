@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "Queans.Api.Users.UserController",
+    "Method": "GetUser",
+    "RelativePath": "User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Users.UserController",
     "Method": "Login",
     "RelativePath": "User/Login",
     "HttpMethod": "GET",
