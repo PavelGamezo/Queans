@@ -28,8 +28,8 @@ app.UseMiddleware<GlobalExceptionHandler>();
 
 app.UseHttpsRedirection();
 
-
 app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers();

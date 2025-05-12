@@ -58,7 +58,7 @@ namespace Queans.Infrastructure
                     //{
                     //    OnMessageReceived = context =>
                     //    {
-                    //        context.Token = context.Request.Cookies["gym-cookies"];
+                    //        context.Token = context.Request.Cookies["queans-cookies"];
 
                     //        return Task.CompletedTask;
                     //    }

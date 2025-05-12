@@ -22,10 +22,7 @@ namespace Queans.Application.Users.Commands.RegisterUser
         {
             var (username, email, password) = request;
 
-            if (await _userRepository.GetUserByEmailAsync(
-                email, cancellationToken) is not null ||
-                await _userRepository.GetUserByUserNameAsync(
-                username, cancellationToken) is not null)
+            if (await _userRepository.IsUserExistAsync(email, username, cancellationToken))
             {
                 return ApplicationErrors.UserExistError;
             }
@@ -45,6 +42,14 @@ namespace Queans.Application.Users.Commands.RegisterUser
             }
 
             var user = userCreationResult.Value;
+
+            var role = await _userRepository.GetUserRoleAsync(cancellationToken);
+            if (role is null)
+            {
+                return ApplicationErrors.RoleNotFoundError;
+            }
+
+            user.RegisterUserRole(role);
 
             await _userRepository.AddAsync(user, cancellationToken);
 

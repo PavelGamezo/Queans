@@ -11,5 +11,9 @@ namespace Queans.Domain.Users.Errors
         public static readonly Error FailureRatingError = Error.Validation(
             code: "General.Failure",
             description: "Email format is invalid");
+
+        public static readonly Error FailureRoleError = Error.Unexpected(
+            code: "General.Failure",
+            description: "Role must be not null");
     }
 }

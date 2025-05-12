@@ -44,7 +44,7 @@ namespace Queans.Api.Users
                 onErrorResult => Problem(onErrorResult));
         }
 
-        [Authorize]
+        [Authorize(Roles = "User")]
         [HttpGet]
         public IActionResult GetUser()
         {

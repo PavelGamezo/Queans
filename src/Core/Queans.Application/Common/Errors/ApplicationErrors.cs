@@ -11,5 +11,9 @@ namespace Queans.Application.Common.Errors
         public static Error NotFoundUser = Error.NotFound(
             code: "Application.NotFound",
             description: "User with entered data is not exist");
+        
+        public static Error RoleNotFoundError = Error.NotFound(
+            code: "Application.NotFound",
+            description: "Internal error");
     }
 }

@@ -1,5 +1,7 @@
 ﻿using ErrorOr;
 using Queans.Domain.Common;
+using Queans.Domain.Users.Entities;
+using Queans.Domain.Users.Errors;
 using Queans.Domain.Users.Events;
 using Queans.Domain.Users.ValueObjects;
 
@@ -7,7 +9,11 @@ namespace Queans.Domain.Users
 {
     public class User : AggregateRoot<Guid>
     {
-        public string UserName { get; private set; } = string.Empty; // ValueObject
+        private readonly List<Role> _roles = [];
+
+        public IReadOnlyCollection<Role> Roles => _roles;
+
+        public string UserName { get; private set; } = string.Empty;
 
         public Email UserEmail { get; private set; } = string.Empty;
 
@@ -30,8 +36,6 @@ namespace Queans.Domain.Users
             Rating = rating;
         }
 
-        private User(Guid userId) : base(userId) { }
-
         public static ErrorOr<User> Create(string userName, string userEmail, string passwordHash, int rating)
         {
             var identifier = Guid.NewGuid();
@@ -48,11 +52,18 @@ namespace Queans.Domain.Users
                 return ratingResult.Errors;
             }
 
-            var user =  new User(identifier, userName, emailResult.Value, passwordHash, ratingResult.Value);
+            var user = new User(identifier, userName, emailResult.Value, passwordHash, ratingResult.Value);
 
             user.AddDomainEvent(new UserRegisteredEvent(user));
 
             return user;
+        }
+
+        public void RegisterUserRole(Role role)
+        {
+            _roles.Add(role);
+
+            AddDomainEvent(new UserRoleCreatedEvent(Id, role.Id));
         }
     }
 }

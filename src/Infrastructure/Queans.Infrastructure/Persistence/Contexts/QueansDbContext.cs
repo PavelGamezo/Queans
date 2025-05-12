@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Queans.Domain.Common;
 using Queans.Domain.Users;
+using Queans.Domain.Users.Entities;
 using Queans.Infrastructure.Persistence.Configurations;
 using Queans.Infrastructure.Persistence.Interceptors;
 
@@ -12,6 +13,8 @@ namespace Queans.Infrastructure.Persistence.Contexts
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Role> Roles { get; set; }
+
         public QueansDbContext(DbContextOptions options,
             PublishDomainEventsInterseptor publishDomainEventsInterseptor) : base(options)
         {
@@ -21,10 +24,12 @@ namespace Queans.Infrastructure.Persistence.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var userConfiguration = new UserConfiguration();
+            var roleConfiguration = new RoleConfiguration();
 
             modelBuilder
                 .Ignore<List<IDomainEvent>>()
-                .ApplyConfiguration(userConfiguration);
+                .ApplyConfiguration(userConfiguration)
+                .ApplyConfiguration(roleConfiguration);
 
             base.OnModelCreating(modelBuilder);
         }

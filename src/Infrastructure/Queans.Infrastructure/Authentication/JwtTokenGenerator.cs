@@ -31,6 +31,13 @@ namespace Queans.Infrastructure.Authentication
                 new Claim(JwtRegisteredClaimNames.EmailVerified, user.UserEmail),
             };
 
+            foreach (var role in user.Roles)
+            {
+                claims.Add(new Claim(
+                    ClaimTypes.Role,
+                    role.Name));
+            }
+
             var token = new JwtSecurityToken(
                 issuer: _jwtSettings.Issuer,
                 audience: _jwtSettings.Audience,

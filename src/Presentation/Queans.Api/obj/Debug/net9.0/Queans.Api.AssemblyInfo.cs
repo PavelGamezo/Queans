@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Queans.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+104c74a371d08b5d85e8104957d120d5ba2c6dbd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8a5ea2f3fb28d0034213afcf7f0e0501aaf9d71")]
 [assembly: System.Reflection.AssemblyProductAttribute("Queans.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Queans.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

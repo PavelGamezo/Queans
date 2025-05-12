@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Queans.Application.Common.Persistence;
 using Queans.Domain.Users;
+using Queans.Domain.Users.Entities;
+using Queans.Domain.Users.Enums;
 using Queans.Infrastructure.Persistence.Contexts;
 
 namespace Queans.Infrastructure.Persistence.Repositories
@@ -22,16 +24,30 @@ namespace Queans.Infrastructure.Persistence.Repositories
 
         public async Task<User?> GetUserByEmailAsync(string email, CancellationToken cancellationToken)
         {
-            return await _dbContext.Users.SingleOrDefaultAsync(
-                user => user.UserEmail == email,
-                cancellationToken);
+            return await _dbContext.Users
+                .Include(user => user.Roles)
+                .SingleOrDefaultAsync(
+                    user => user.UserEmail == email, cancellationToken);
         }
 
         public async Task<User?> GetUserByUserNameAsync(string userName, CancellationToken cancellationToken)
         {
-            return await _dbContext.Users.SingleOrDefaultAsync(
-                user => user.UserName == userName,
-                cancellationToken);
+            return await _dbContext.Users
+                .Include (user => user.Roles)
+                .SingleOrDefaultAsync(
+                    user => user.UserName == userName,
+                    cancellationToken);
+        }
+
+        public async Task<bool> IsUserExistAsync(string email, string username, CancellationToken cancellationToken)
+        {
+            var user = await _dbContext.Users.SingleOrDefaultAsync(user => user.UserEmail == email, cancellationToken);
+            if (user is null || user.UserName != username)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public async Task RemoveAsync(User user, CancellationToken cancellationToken)
@@ -50,6 +66,12 @@ namespace Queans.Infrastructure.Persistence.Repositories
         {
             _dbContext.Update(user);
             await SaveAsync(cancellationToken);
+        }
+
+        public async Task<Role?> GetUserRoleAsync(CancellationToken cancellationToken)
+        {
+            return await _dbContext.Roles
+                .SingleOrDefaultAsync(role => role.Name == RoleEnum.User.ToString(), cancellationToken);
         }
     }
 }
