@@ -3,8 +3,12 @@ using Queans.Api.Common.GlobalExceptions;
 using Queans.Application;
 using Queans.Infrastructure;
 using Scalar.AspNetCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Adding serilog logger
+builder.AddSerilog();
 
 builder.Services
     .AddPresentation()

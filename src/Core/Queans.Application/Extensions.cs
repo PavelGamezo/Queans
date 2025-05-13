@@ -14,6 +14,10 @@ namespace Queans.Application
                 typeof(IPipelineBehavior<,>),
                 typeof(ValidationBehavior<,>));
 
+            services.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(LoggingBehavior<,>));
+
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 

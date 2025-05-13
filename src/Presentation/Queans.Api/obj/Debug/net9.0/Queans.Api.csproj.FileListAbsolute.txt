@@ -190,3 +190,12 @@ D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Q
 D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\BCrypt.Net-Next.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.AspNetCore.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api\bin\Debug\net9.0\Serilog.Sinks.File.dll

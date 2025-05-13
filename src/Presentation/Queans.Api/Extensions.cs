@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.OpenApi;
 using Microsoft.OpenApi.Models;
 using Queans.Api.Common.GlobalExceptions;
+using Serilog;
 
 namespace Queans.Api
 {
@@ -20,6 +21,14 @@ namespace Queans.Api
             });
 
             return services;
+        }
+
+        public static WebApplicationBuilder AddSerilog(this WebApplicationBuilder builder)
+        {
+            builder.Host.UseSerilog((context, configuration) =>
+                configuration.ReadFrom.Configuration(context.Configuration));
+
+            return builder;
         }
     }
 
