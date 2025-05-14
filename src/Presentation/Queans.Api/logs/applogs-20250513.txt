@@ -43,3 +43,10 @@ ORDER BY u1."Id", s."RoleId", s."UserId"
 2025-05-13 19:52:59.556 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
 2025-05-13 19:52:59.557 +03:00 [INF] Executed action Queans.Api.Users.UserController.GetUser (Queans.Api) in 4207.0577ms
 2025-05-13 19:52:59.558 +03:00 [INF] Executed endpoint 'Queans.Api.Users.UserController.GetUser (Queans.Api)'
+2025-05-13 21:39:56.447 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-13 21:39:56.890 +03:00 [INF] Now listening on: https://localhost:7008
+2025-05-13 21:39:56.893 +03:00 [INF] Now listening on: http://localhost:5210
+2025-05-13 21:39:56.964 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-13 21:39:56.966 +03:00 [INF] Hosting environment: Development
+2025-05-13 21:39:56.967 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api
+2025-05-13 21:40:07.537 +03:00 [INF] Application is shutting down...

@@ -4,7 +4,7 @@ using Queans.Domain.Users.Events;
 
 namespace Queans.Application.Users.Events
 {
-    public class UserRegisteredNotificationHandler(ILogger logger)
+    public class UserRegisteredNotificationHandler(ILogger<UserRegisteredNotificationHandler> logger)
         : INotificationHandler<UserRegisteredEvent>
     {
         public Task Handle(UserRegisteredEvent notification, CancellationToken cancellationToken)
