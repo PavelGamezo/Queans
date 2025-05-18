@@ -6,11 +6,13 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Queans.Application.Common.Authentications;
 using Queans.Application.Common.Persistence;
+using Queans.Application.Common.Services;
 using Queans.Infrastructure.Authentication;
 using Queans.Infrastructure.Common.Options;
 using Queans.Infrastructure.Persistence.Contexts;
 using Queans.Infrastructure.Persistence.Interceptors;
 using Queans.Infrastructure.Persistence.Repositories;
+using Queans.Infrastructure.Services;
 using System.Text;
 
 namespace Queans.Infrastructure
@@ -21,6 +23,8 @@ namespace Queans.Infrastructure
             this IServiceCollection services,
             IConfiguration configuration)
         {
+            services.AddScoped<IPasswordHasher, PasswordHasher>();
+
             services.AddPersistence(configuration);
 
             services.AddJwtAuthentication(configuration);

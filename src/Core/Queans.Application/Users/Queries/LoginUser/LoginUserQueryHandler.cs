@@ -4,6 +4,7 @@ using Queans.Application.Common.CQRS.Queries;
 using Queans.Application.Common.DTOs;
 using Queans.Application.Common.Errors;
 using Queans.Application.Common.Persistence;
+using Queans.Application.Common.Services;
 using Queans.Domain.Users;
 
 namespace Queans.Application.Users.Queries.LoginUser
@@ -12,13 +13,16 @@ namespace Queans.Application.Users.Queries.LoginUser
     {
         private readonly IUserRepository _userRepository;
         private readonly IJwtTokenGenerator _jwtTokenGenerator;
+        private readonly IPasswordHasher _passwordHasher;
 
         public LoginUserQueryHandler(
             IUserRepository userRepository,
-            IJwtTokenGenerator jwtTokenGenerator)
+            IJwtTokenGenerator jwtTokenGenerator,
+            IPasswordHasher passwordHasher)
         {
             _userRepository = userRepository;
             _jwtTokenGenerator = jwtTokenGenerator;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<ErrorOr<string>> Handle(LoginUserQuery request, CancellationToken cancellationToken)
@@ -33,7 +37,7 @@ namespace Queans.Application.Users.Queries.LoginUser
             }
 
             // Validate password with PasswordHashService
-            if (user.PasswordHash != password)
+            if (!_passwordHasher.VerifyHashedPassword(password, user.PasswordHash))
             {
                 return ApplicationErrors.NotFoundUser;
             }

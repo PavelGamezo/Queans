@@ -3,6 +3,7 @@ using Queans.Application.Common.CQRS.Commands;
 using Queans.Application.Common.DTOs;
 using Queans.Application.Common.Errors;
 using Queans.Application.Common.Persistence;
+using Queans.Application.Common.Services;
 using Queans.Domain.Users;
 
 namespace Queans.Application.Users.Commands.RegisterUser
@@ -12,10 +13,14 @@ namespace Queans.Application.Users.Commands.RegisterUser
         private const int INITIAL_USER_RATING = 0;
 
         private readonly IUserRepository _userRepository;
+        private readonly IPasswordHasher _passwordHasher;
 
-        public RegisterUserCommandHandler(IUserRepository userRepository)
+        public RegisterUserCommandHandler(
+            IUserRepository userRepository,
+            IPasswordHasher passwordHasher)
         {
             _userRepository = userRepository;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<ErrorOr<UserDto>> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
@@ -27,13 +32,12 @@ namespace Queans.Application.Users.Commands.RegisterUser
                 return ApplicationErrors.UserExistError;
             }
 
-            // TODO: Implement password hashing 
-            // var passwordHash = _passwordHashService.HashPassword(password);
+            var passwordHash = _passwordHasher.GenerateHashedPassword(password);
 
             var userCreationResult = User.Create(
                 username,
                 email,
-                password,
+                passwordHash,
                 INITIAL_USER_RATING);
 
             if (userCreationResult.IsError)

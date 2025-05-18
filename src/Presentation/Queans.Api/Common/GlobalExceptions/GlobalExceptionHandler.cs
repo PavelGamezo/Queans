@@ -1,7 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
-using Npgsql.Internal;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 

@@ -40,7 +40,19 @@ namespace Queans.Api.Users
                 request.Password));
 
             return result.Match(
-                onValueResult => Ok(onValueResult),
+                onValueResult =>
+                {
+                    HttpContext.Response.Cookies.Append(
+                        "jwt",
+                        onValueResult,
+                        new CookieOptions
+                        {
+                            HttpOnly = true,
+                            Secure = true,
+                            Expires = DateTime.UtcNow.AddMinutes(60)
+                        });
+                    return Ok(onValueResult);
+                },
                 onErrorResult => Problem(onErrorResult));
         }
 
