@@ -1,0 +1,71 @@
+2025-05-19 11:36:35.631 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-19 11:36:36.139 +03:00 [INF] Now listening on: https://localhost:7008
+2025-05-19 11:36:36.141 +03:00 [INF] Now listening on: http://localhost:5210
+2025-05-19 11:36:36.197 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 11:36:36.198 +03:00 [INF] Hosting environment: Development
+2025-05-19 11:36:36.199 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api
+2025-05-19 11:46:46.994 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-19 11:46:47.428 +03:00 [INF] Now listening on: https://localhost:7008
+2025-05-19 11:46:47.430 +03:00 [INF] Now listening on: http://localhost:5210
+2025-05-19 11:46:47.481 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 11:46:47.483 +03:00 [INF] Hosting environment: Development
+2025-05-19 11:46:47.484 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api
+2025-05-19 11:56:20.297 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-05-19 11:58:09.082 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-05-19 12:14:57.726 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-05-19 12:14:58.176 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-05-19 12:14:58.190 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-05-19 12:14:58.193 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-05-19 12:14:58.194 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-05-19 12:14:58.201 +03:00 [INF] Applying migration '20250519091431_QuestionInitialization'.
+2025-05-19 12:14:58.273 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Questions" (
+    "Id" uuid NOT NULL,
+    "Rating" integer NOT NULL,
+    "AuthorId" uuid NOT NULL,
+    "Title" text NOT NULL,
+    "Description" text NOT NULL,
+    "DateOfCreation" timestamp with time zone NOT NULL,
+    "DateOfUpdate" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_Questions" PRIMARY KEY ("Id"),
+    CONSTRAINT "FK_Questions_Users_AuthorId" FOREIGN KEY ("AuthorId") REFERENCES "Users" ("Id") ON DELETE CASCADE
+);
+2025-05-19 12:14:58.279 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Tag" (
+    "Id" uuid NOT NULL,
+    "Name" text NOT NULL,
+    CONSTRAINT "PK_Tag" PRIMARY KEY ("Id")
+);
+2025-05-19 12:14:58.285 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "QuestionTag" (
+    "QuestionId" uuid NOT NULL,
+    "TagId" uuid NOT NULL,
+    CONSTRAINT "PK_QuestionTag" PRIMARY KEY ("QuestionId", "TagId"),
+    CONSTRAINT "FK_QuestionTag_Questions_QuestionId" FOREIGN KEY ("QuestionId") REFERENCES "Questions" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_QuestionTag_Tag_TagId" FOREIGN KEY ("TagId") REFERENCES "Tag" ("Id") ON DELETE CASCADE
+);
+2025-05-19 12:14:58.288 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Questions_AuthorId" ON "Questions" ("AuthorId");
+2025-05-19 12:14:58.290 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_QuestionTag_TagId" ON "QuestionTag" ("TagId");
+2025-05-19 12:14:58.292 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250519091431_QuestionInitialization', '9.0.4');

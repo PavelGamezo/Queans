@@ -33,8 +33,8 @@ namespace Queans.Infrastructure.Persistence.Configurations
                 .HasMany(user => user.Roles)
                 .WithMany(role => role.Users)
                 .UsingEntity<UserRole>(
-                    l => l.HasOne<Role>().WithMany().HasForeignKey(ur => ur.RoleId),
-                    r => r.HasOne<User>().WithMany().HasForeignKey(ur => ur.UserId));
+                    r => r.HasOne<Role>().WithMany().HasForeignKey(ur => ur.RoleId),
+                    l => l.HasOne<User>().WithMany().HasForeignKey(ur => ur.UserId));
         }
     }
 }

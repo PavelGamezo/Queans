@@ -10,6 +10,10 @@ namespace Queans.Domain.Questions.Errors
 
         public static Error IncorrectDescriptionInput = Error.Validation(
             code: "General.Validation",
-            description: "Incorrect title input");
+            description: "Incorrect description input");
+
+        public static Error IncorrectTagNameInput = Error.Validation(
+            code: "General.Validation",
+            description: "Incorrect tag name input");
     }
 }

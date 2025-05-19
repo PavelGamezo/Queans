@@ -1,0 +1,31 @@
+﻿using ErrorOr;
+using Queans.Domain.Common;
+using Queans.Domain.Questions.Errors;
+
+namespace Queans.Domain.Questions.Entities
+{
+    public class Tag : Entity<Guid>
+    {
+        public string Name { get; private set; } = null!;
+
+        private readonly List<Question> _questions = new();
+        public IReadOnlyCollection<Question> Questions => _questions;
+
+        public Tag(Guid id, string name) : base(id)
+        {
+            Name = name;
+        }
+
+        public ErrorOr<Tag> CreateTag(string name)
+        {
+            var identifier = Guid.NewGuid();
+
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return QuestionDomainErrors.IncorrectTagNameInput;
+            }
+
+            return new Tag(identifier, name);
+        }
+    }
+}

@@ -1,5 +1,7 @@
 ﻿using ErrorOr;
 using Queans.Domain.Common;
+using Queans.Domain.Questions.Entities;
+using Queans.Domain.Questions.Events;
 using Queans.Domain.Questions.ValueObjects;
 using Queans.Domain.Users;
 using Queans.Domain.Users.ValueObjects;
@@ -8,13 +10,12 @@ namespace Queans.Domain.Questions
 {
     public class Question : AggregateRoot<Guid>
     {
-        //private readonly List<Tag> _tags = new();
+        //private readonly List<Answer> _answers = [];
 
-        //private readonly List<Answer> _answers = new();
+        private readonly List<Tag>? _tags = new();
+        public IReadOnlyCollection<Tag>? Tags => _tags;
 
-        //public IReadOnlyCollection<Tag> Tags { get; private set; } => _tags;
-
-        //public IReadOnlyCollection<Answer> Answers { get; private set; } => _answers;
+        //public IReadOnlyCollection<Answer> Answers => _answers;
 
         public Rating Rating { get; private set; } = 0;
 
@@ -22,11 +23,13 @@ namespace Queans.Domain.Questions
 
         public Title Title { get; private set; } = string.Empty;
 
-        public string Description { get; private set; } = String.Empty;
+        public Description Description { get; private set; } = string.Empty;
 
-        public DateTime DateOfCreation { get; private set; } = default!;
+        public DateTime DateOfCreation { get; private set; } = default;
 
-        public DateTime DateOfUpdate { get; private set; } = default!;
+        public DateTime DateOfUpdate { get; private set; } = default;
+
+        private Question(Guid id) : base(id) { }
 
         public Question(
             Guid id,
@@ -43,6 +46,13 @@ namespace Queans.Domain.Questions
             Description = description;
             DateOfCreation = dateOfCreation;
             DateOfUpdate = dateOfCreation;
+        }
+
+        public void AddQuestionTag(Tag tag)
+        {
+            _tags.Add(tag);
+
+            AddDomainEvent(new QuestionTagAddedEvent(tag));
         }
 
         public ErrorOr<Question> CreateQuestion(
@@ -66,13 +76,17 @@ namespace Queans.Domain.Questions
                 return descriptionResult.Errors;
             }
 
-            return new Question(
+            var question = new Question(
                 identifier,
                 rating,
                 user,
                 titleResult.Value,
                 descriptionResult.Value,
                 dateOfCreation);
+
+            AddDomainEvent(new QuestionCreatedEvent(question));
+
+            return question;
         }
     }
 }

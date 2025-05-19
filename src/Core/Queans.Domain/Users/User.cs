@@ -1,5 +1,6 @@
 ﻿using ErrorOr;
 using Queans.Domain.Common;
+using Queans.Domain.Questions;
 using Queans.Domain.Users.Entities;
 using Queans.Domain.Users.Errors;
 using Queans.Domain.Users.Events;
@@ -10,8 +11,10 @@ namespace Queans.Domain.Users
     public class User : AggregateRoot<Guid>
     {
         private readonly List<Role> _roles = [];
-
         public IReadOnlyCollection<Role> Roles => _roles;
+
+        private readonly List<Question> _question = new();
+        public IReadOnlyCollection<Question> Questions => _question;
 
         public string UserName { get; private set; } = string.Empty;
 
