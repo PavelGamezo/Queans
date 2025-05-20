@@ -16,7 +16,7 @@ namespace Queans.Domain.Questions.ValueObjects
         {
             if (value.Length > MAX_LENGTH_VALUE)
             {
-                return QuestionDomainErrors.IncorrectTitleInput;
+                return QuestionDomainErrors.IncorrectTitleInputError;
             }
 
             return new Title(value);

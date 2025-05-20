@@ -1,0 +1,6 @@
+2025-05-20 12:15:16.214 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-20 12:15:17.310 +03:00 [INF] Now listening on: https://localhost:7008
+2025-05-20 12:15:17.356 +03:00 [INF] Now listening on: http://localhost:5210
+2025-05-20 12:15:17.503 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 12:15:17.504 +03:00 [INF] Hosting environment: Development
+2025-05-20 12:15:17.505 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api

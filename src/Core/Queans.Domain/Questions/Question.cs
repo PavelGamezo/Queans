@@ -10,12 +10,12 @@ namespace Queans.Domain.Questions
 {
     public class Question : AggregateRoot<Guid>
     {
-        //private readonly List<Answer> _answers = [];
 
         private readonly List<Tag>? _tags = new();
         public IReadOnlyCollection<Tag>? Tags => _tags;
 
-        //public IReadOnlyCollection<Answer> Answers => _answers;
+        private readonly List<Answer> _answers = new();
+        public IReadOnlyCollection<Answer> Answers => _answers;
 
         public Rating Rating { get; private set; } = 0;
 
@@ -52,7 +52,29 @@ namespace Queans.Domain.Questions
         {
             _tags.Add(tag);
 
-            AddDomainEvent(new QuestionTagAddedEvent(tag));
+            AddDomainEvent(new TagAddedEvent(tag.Id, Id));
+        }
+
+        public void AddAnswer(Answer answer)
+        {
+            _answers.Add(answer);
+
+            AddDomainEvent(new AnswerAddedEvent(answer.Id, Id));
+        }
+
+        // TODO: 
+        // Create normal business logic for upvote/downvote Question
+        public void UpvoteQuestion()
+            => Rating++;
+
+        public void DownvoteQuestion()
+        {
+            if (Rating == 0)
+            {
+                return;
+            }
+
+            Rating--;
         }
 
         public ErrorOr<Question> CreateQuestion(
@@ -70,7 +92,7 @@ namespace Queans.Domain.Questions
                 return titleResult.Errors;
             }
 
-            var descriptionResult = ValueObjects.Description.CreateDescription(description);
+            var descriptionResult = Description.CreateDescription(description);
             if (descriptionResult.IsError)
             {
                 return descriptionResult.Errors;

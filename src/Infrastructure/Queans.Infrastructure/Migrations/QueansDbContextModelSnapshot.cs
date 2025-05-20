@@ -22,6 +22,40 @@ namespace Queans.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("Queans.Domain.Questions.Entities.Answer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("AuthorId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("DateOfCreation")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("DateOfUpdate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("QuestionId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("QuestionId");
+
+                    b.ToTable("Answers", (string)null);
+                });
+
             modelBuilder.Entity("Queans.Domain.Questions.Entities.QuestionTag", b =>
                 {
                     b.Property<Guid>("QuestionId")
@@ -155,6 +189,25 @@ namespace Queans.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Queans.Domain.Questions.Entities.Answer", b =>
+                {
+                    b.HasOne("Queans.Domain.Users.User", "Author")
+                        .WithMany("Answers")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Queans.Domain.Questions.Question", "Question")
+                        .WithMany("Answers")
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Question");
+                });
+
             modelBuilder.Entity("Queans.Domain.Questions.Entities.QuestionTag", b =>
                 {
                     b.HasOne("Queans.Domain.Questions.Question", null)
@@ -196,8 +249,15 @@ namespace Queans.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Queans.Domain.Questions.Question", b =>
+                {
+                    b.Navigation("Answers");
+                });
+
             modelBuilder.Entity("Queans.Domain.Users.User", b =>
                 {
+                    b.Navigation("Answers");
+
                     b.Navigation("Questions");
                 });
 #pragma warning restore 612, 618

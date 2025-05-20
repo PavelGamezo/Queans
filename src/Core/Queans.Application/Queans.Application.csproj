@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Questions\Events\" />
-    <Folder Include="Questions\Queries\" />
   </ItemGroup>
 
 </Project>

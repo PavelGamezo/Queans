@@ -1,6 +1,7 @@
 ﻿using ErrorOr;
 using Queans.Domain.Common;
 using Queans.Domain.Questions.Errors;
+using Queans.Domain.Questions.Events;
 
 namespace Queans.Domain.Questions.Entities
 {
@@ -22,10 +23,14 @@ namespace Queans.Domain.Questions.Entities
 
             if (string.IsNullOrWhiteSpace(name))
             {
-                return QuestionDomainErrors.IncorrectTagNameInput;
+                return QuestionDomainErrors.IncorrectTagNameInputError;
             }
 
-            return new Tag(identifier, name);
+            var tag = new Tag(identifier, name);
+
+            AddDomainEvent(new TagCreatedEvent(tag.Id));
+
+            return tag;
         }
     }
 }

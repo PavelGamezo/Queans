@@ -29,6 +29,7 @@ namespace Queans.Infrastructure.Authentication
             {
                 new Claim(JwtRegisteredClaimNames.Nickname, user.UserName),
                 new Claim(JwtRegisteredClaimNames.EmailVerified, user.UserEmail),
+                new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString())
             };
 
             foreach (var role in user.Roles)

@@ -1,9 +1,10 @@
-﻿using Queans.Application.Common.CQRS.Commands;
+﻿using ErrorOr;
+using Queans.Application.Common.CQRS.Commands;
 
 namespace Queans.Application.Questions.Commands.CreateQuestion
 {
     public record CreateQuestionCommand(
         string Title,
         string Description, 
-        Guid AuthorId) : ICommand<Guid>;
+        Guid AuthorId) : ICommand<ErrorOr<Success>>;
 }

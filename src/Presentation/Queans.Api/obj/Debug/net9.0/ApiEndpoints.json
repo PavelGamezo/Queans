@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "Queans.Api.Questions.QuestionController",
+    "Method": "GetListOfQuestions",
+    "RelativePath": "api/Question/questions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Questions.QuestionController",
+    "Method": "CreateQuestion",
+    "RelativePath": "api/Question/questions/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Queans.Api.Questions.CreateQuestionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Questions.QuestionController",
+    "Method": "GetQuestionsByTagFiltering",
+    "RelativePath": "api/Question/questions/filter-by-tags",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tags",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Queans.Api.Users.UserController",
     "Method": "GetUser",
     "RelativePath": "User",

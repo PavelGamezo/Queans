@@ -14,7 +14,7 @@ namespace Queans.Domain.Questions.ValueObjects
         {
             if (string.IsNullOrEmpty(value))
             {
-                return QuestionDomainErrors.IncorrectDescriptionInput;
+                return QuestionDomainErrors.IncorrectDescriptionInputError;
             }
 
             return new Description(value);

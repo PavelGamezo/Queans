@@ -91,6 +91,7 @@ namespace Queans.Infrastructure
 
             // Added repositories
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IQuestionRepository, QuestionRepository>();
 
             return services;
         }

@@ -15,5 +15,9 @@ namespace Queans.Domain.Users.Errors
         public static readonly Error FailureRoleError = Error.Unexpected(
             code: "General.Validation",
             description: "Role must be not null");
+
+        public static readonly Error NotFoundUserError = Error.NotFound(
+            code: "General.NotFound",
+            description: "User is not exist");
     }
 }

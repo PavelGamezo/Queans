@@ -29,12 +29,14 @@ namespace Queans.Infrastructure.Persistence.Contexts
             var userConfiguration = new UserConfiguration();
             var roleConfiguration = new RoleConfiguration();
             var questionConfiguration = new QuestionConfiguration();
+            var answerConfiguration = new AnswerConfiguration();
 
             modelBuilder
                 .Ignore<List<IDomainEvent>>()
                 .ApplyConfiguration(userConfiguration)
                 .ApplyConfiguration(roleConfiguration)
-                .ApplyConfiguration(questionConfiguration);
+                .ApplyConfiguration(questionConfiguration)
+                .ApplyConfiguration(answerConfiguration);
 
             base.OnModelCreating(modelBuilder);
         }
