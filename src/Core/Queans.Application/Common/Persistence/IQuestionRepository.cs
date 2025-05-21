@@ -15,5 +15,7 @@ namespace Queans.Application.Common.Persistence
         void Update(Question question);
 
         void Delete(Question question);
+
+        Task SaveAsync(CancellationToken cancellationToken);
     }
 }

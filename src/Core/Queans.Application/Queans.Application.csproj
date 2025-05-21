@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Answers\Commands\" />
     <Folder Include="Answers\Queries\" />
+    <Folder Include="Tags\" />
     <Folder Include="Questions\Events\" />
   </ItemGroup>
 

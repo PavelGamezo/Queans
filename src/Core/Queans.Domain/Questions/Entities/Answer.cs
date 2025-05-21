@@ -48,7 +48,7 @@ namespace Queans.Domain.Questions.Entities
             Rating += rating;
         }
 
-        public ErrorOr<Answer> CreateAnswer(string text, User author, Question question,int rating)
+        public static ErrorOr<Answer> CreateAnswer(string text, User author, Question question,int rating)
         {
             var textResult = AnswerText.Create(text);
             if (textResult.IsError)
@@ -81,7 +81,7 @@ namespace Queans.Domain.Questions.Entities
                 rating,
                 DateTime.UtcNow);
 
-            AddDomainEvent(new AnswerCreatedEvent(answer.Id));
+            answer.AddDomainEvent(new AnswerCreatedEvent(answer.Id));
 
             return answer;
         }

@@ -539,3 +539,9 @@ ORDER BY s."Id", s."Id0", s0."QuestionId", s0."TagId", s0."Id"
 2025-05-21 23:21:18.146 +03:00 [INF] Executed action Queans.Api.Questions.QuestionController.GetQuestionWithAnswers (Queans.Api) in 87481.7252ms
 2025-05-21 23:21:18.158 +03:00 [INF] Executed endpoint 'Queans.Api.Questions.QuestionController.GetQuestionWithAnswers (Queans.Api)'
 2025-05-21 23:21:20.135 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7008/api/question/526cb9f0-7185-47ce-8705-493067f9827c - 404 null application/problem+json; charset=utf-8 89766.678ms
+2025-05-21 23:41:42.102 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-21 23:41:42.343 +03:00 [INF] Now listening on: https://localhost:7008
+2025-05-21 23:41:42.345 +03:00 [INF] Now listening on: http://localhost:5210
+2025-05-21 23:41:42.379 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-21 23:41:42.380 +03:00 [INF] Hosting environment: Development
+2025-05-21 23:41:42.381 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api

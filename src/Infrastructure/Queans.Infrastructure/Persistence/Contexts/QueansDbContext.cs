@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Queans.Domain.Common;
 using Queans.Domain.Questions;
+using Queans.Domain.Questions.Entities;
 using Queans.Domain.Users;
 using Queans.Domain.Users.Entities;
 using Queans.Infrastructure.Persistence.Configurations;
@@ -17,6 +18,8 @@ namespace Queans.Infrastructure.Persistence.Contexts
         public DbSet<Role> Roles { get; set; }
 
         public DbSet<Question> Questions { get; set; }
+
+        public DbSet<Tag> Tags { get; set; }
 
         public QueansDbContext(DbContextOptions options,
             PublishDomainEventsInterseptor publishDomainEventsInterseptor) : base(options)

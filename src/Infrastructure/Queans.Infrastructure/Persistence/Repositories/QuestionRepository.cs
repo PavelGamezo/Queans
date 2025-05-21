@@ -55,5 +55,10 @@ namespace Queans.Infrastructure.Persistence.Repositories
         {
             _dbContext.Questions.Update(question);
         }
+
+        public async Task SaveAsync(CancellationToken cancellationToken)
+        {
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }

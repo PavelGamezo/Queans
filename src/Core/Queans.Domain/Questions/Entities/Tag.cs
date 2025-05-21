@@ -17,7 +17,7 @@ namespace Queans.Domain.Questions.Entities
             Name = name;
         }
 
-        public ErrorOr<Tag> CreateTag(string name)
+        public static ErrorOr<Tag> CreateTag(string name)
         {
             var identifier = Guid.NewGuid();
 
@@ -28,7 +28,7 @@ namespace Queans.Domain.Questions.Entities
 
             var tag = new Tag(identifier, name);
 
-            AddDomainEvent(new TagCreatedEvent(tag.Id));
+            tag.AddDomainEvent(new TagCreatedEvent(tag.Id));
 
             return tag;
         }
