@@ -21,10 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Core\Queans.Application\Queans.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Queans.Infrastructure\Queans.Infrastructure.csproj" />
   </ItemGroup>

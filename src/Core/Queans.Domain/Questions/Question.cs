@@ -77,7 +77,7 @@ namespace Queans.Domain.Questions
             Rating--;
         }
 
-        public ErrorOr<Question> CreateQuestion(
+        public static ErrorOr<Question> CreateQuestion(
             int rating,
             User user,
             string title,
@@ -106,7 +106,7 @@ namespace Queans.Domain.Questions
                 descriptionResult.Value,
                 dateOfCreation);
 
-            AddDomainEvent(new QuestionCreatedEvent(question));
+            question.AddDomainEvent(new QuestionCreatedEvent(question));
 
             return question;
         }

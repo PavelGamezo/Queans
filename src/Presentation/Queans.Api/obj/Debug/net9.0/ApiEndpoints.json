@@ -1,8 +1,24 @@
 [
   {
     "ContainingType": "Queans.Api.Questions.QuestionController",
+    "Method": "GetQuestionWithAnswers",
+    "RelativePath": "api/question/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "GetListOfQuestions",
-    "RelativePath": "api/Question/questions",
+    "RelativePath": "api/questions",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +28,7 @@
   {
     "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "CreateQuestion",
-    "RelativePath": "api/Question/questions/create",
+    "RelativePath": "api/questions/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +44,7 @@
   {
     "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "GetQuestionsByTagFiltering",
-    "RelativePath": "api/Question/questions/filter-by-tags",
+    "RelativePath": "api/questions/filter-by-tags",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

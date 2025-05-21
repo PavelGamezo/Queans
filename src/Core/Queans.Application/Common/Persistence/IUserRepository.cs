@@ -11,6 +11,8 @@ namespace Queans.Application.Common.Persistence
 
         Task<bool> IsUserExistAsync(string email, string username, CancellationToken cancellationToken);
 
+        Task<User?> GetUserByIdAsync(Guid id, CancellationToken cancellationToken);
+
         Task<User?> GetUserByUserNameAsync(string userName, CancellationToken cancellationToken);
 
         Task AddAsync(User user, CancellationToken cancellationToken);

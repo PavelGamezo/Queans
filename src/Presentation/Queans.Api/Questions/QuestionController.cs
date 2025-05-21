@@ -3,13 +3,14 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Queans.Api.Common.Errors;
 using Queans.Application.Questions.Commands.CreateQuestion;
+using Queans.Application.Questions.Queries.GetQuestion;
 using Queans.Application.Questions.Queries.GetQuestionsByTags;
 using Queans.Application.Questions.Queries.GetQuestionsList;
 using System.Security.Claims;
 
 namespace Queans.Api.Questions
 {
-    [Route("api/[controller]")]
+    [Route("api/")]
     public class QuestionController : ApiBaseController
     {
         private readonly ISender _sender;
@@ -30,6 +31,18 @@ namespace Queans.Api.Questions
                 onErrorResult => Problem(onErrorResult));
         }
 
+        [Route("question/{id}")]
+        [HttpGet]
+        public async Task<IActionResult> GetQuestionWithAnswers(
+            [FromRoute] Guid id)
+        {
+            var result = await _sender.Send(new GetQuestionQuery(id));
+
+            return result.Match(
+                onValueResult => Ok(onValueResult),
+                onErrorResult => Problem(onErrorResult));
+        }
+
         [Route("questions/filter-by-tags")]
         [HttpGet]
         public async Task<IActionResult> GetQuestionsByTagFiltering(
@@ -42,7 +55,7 @@ namespace Queans.Api.Questions
                 onErrorResult => Problem(onErrorResult));
         }
 
-        [Authorize("User, Admin")]
+        [Authorize(Roles = "User, Admin")]
         [Route("questions/create")]
         [HttpPost]
         public async Task<IActionResult> CreateQuestion([FromBody] CreateQuestionRequest request)

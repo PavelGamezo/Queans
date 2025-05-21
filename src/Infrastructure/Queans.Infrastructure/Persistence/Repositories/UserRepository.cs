@@ -30,6 +30,16 @@ namespace Queans.Infrastructure.Persistence.Repositories
                     user => user.UserEmail == email, cancellationToken);
         }
 
+        public async Task<User?> GetUserByIdAsync(Guid id, CancellationToken cancellationToken)
+        {
+            return await _dbContext.Users
+                .Include(user => user.Roles)
+                .Include(user => user.Answers)
+                .Include(user => user.Questions)
+                .SingleOrDefaultAsync(
+                    user => user.Id == id, cancellationToken);
+        }
+
         public async Task<User?> GetUserByUserNameAsync(string userName, CancellationToken cancellationToken)
         {
             return await _dbContext.Users
