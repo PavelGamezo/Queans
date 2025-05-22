@@ -7,6 +7,8 @@ namespace Queans.Application.Common.Persistence
     {
         Task<Tag> GetTagByIdAsync(Guid id, CancellationToken cancellationToken);
 
+        Task<List<Tag>> GetExistingTags(List<string> tagNames, CancellationToken cancellationToken);
+
         void AddTag(Tag tag);
 
         void UpdateTag(Tag tag);

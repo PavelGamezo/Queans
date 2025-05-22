@@ -37,12 +37,28 @@ namespace Queans.Api.Answers
                 onErrorResult => Problem(onErrorResult));
         }
 
+        //TODO: AnswerOwnerOrAdminPolicy
+        [Authorize(Policy = "answer-owner-or-admin")]
         [HttpPut]
-        [Authorize]
+        [Route("answers/{answerId}/update")]
         public async Task<IActionResult> UpdateAnswer(
+            [FromRoute] Guid id,
             [FromBody] string text)
         {
-            var result = await _sender.Send(new UpdateAnswerCommand())
+            var result = await _sender.Send(new UpdateAnswerCommand(id, text));
+
+            return result.Match(
+                onValueResult => Ok(onValueResult),
+                onErrorResult => Problem(onErrorResult));
+        }
+
+        // Delete
+        [Authorize(Policy = "answer-owner-or-admin")]
+        [HttpDelete]
+        [Route("answers/{answerId}/delete")]
+        public async Task<IActionResult> RemoveAnswer()
+        {
+            return Ok();
         }
     }
 }

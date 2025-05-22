@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,6 +9,7 @@ using Queans.Application.Common.Authentications;
 using Queans.Application.Common.Persistence;
 using Queans.Application.Common.Services;
 using Queans.Infrastructure.Authentication;
+using Queans.Infrastructure.Authentication.Persistences;
 using Queans.Infrastructure.Common.Options;
 using Queans.Infrastructure.Persistence.Contexts;
 using Queans.Infrastructure.Persistence.Interceptors;
@@ -24,10 +26,35 @@ namespace Queans.Infrastructure
             IConfiguration configuration)
         {
             services.AddScoped<IPasswordHasher, PasswordHasher>();
+            services.AddHttpContextAccessor();
+
+            services.AddAuthorization();
 
             services.AddPersistence(configuration);
 
             services.AddJwtAuthentication(configuration);
+
+            return services;
+        }
+
+        public static IServiceCollection AddAuthorization(
+            this IServiceCollection services)
+        {
+            services.AddScoped<IAuthorizationHandler, QuestionOwnerOrAdminRequirementHandler>();
+
+            services.AddAuthorization(option =>
+            {
+                option.AddPolicy("question-owner-or-admin", policy =>
+                {
+                    policy.Requirements.Add(new QuestionOwnerOrAdminRequirement());
+                });
+
+                option.AddPolicy("answer-owner-or-admin", policy =>
+                {
+                    policy.Requirements.Add(new AnswerOwnerOrAdminRequirement());
+                });
+            });
+
 
             return services;
         }
@@ -92,6 +119,8 @@ namespace Queans.Infrastructure
             // Added repositories
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IQuestionRepository, QuestionRepository>();
+            services.AddScoped<IAnswerRepository, AnswerRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
 
             return services;
         }

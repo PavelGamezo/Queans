@@ -38,5 +38,12 @@ namespace Queans.Infrastructure.Persistence.Repositories
         {
             await _dbContext.SaveChangesAsync();
         }
+
+        public async Task<List<Tag>> GetExistingTags(List<string> tagNames, CancellationToken cancellationToken)
+        {
+            return await _dbContext.Tags
+                .Where(tag => tagNames.Contains(tag.Name))
+                .ToListAsync();
+        }
     }
 }

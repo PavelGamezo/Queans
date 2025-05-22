@@ -19,6 +19,8 @@ namespace Queans.Infrastructure.Persistence.Contexts
 
         public DbSet<Question> Questions { get; set; }
 
+        public DbSet<Answer> Answers { get; set; }
+
         public DbSet<Tag> Tags { get; set; }
 
         public QueansDbContext(DbContextOptions options,

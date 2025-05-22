@@ -5,5 +5,9 @@ using Queans.Domain.Questions;
 
 namespace Queans.Application.Questions.Commands.UpdateQuestion
 {
-    public record UpdateQuestionCommand(QuestionDetailsDto request) : ICommand<ErrorOr<Success>>;
+    public record UpdateQuestionCommand(
+        Guid Id,
+        string Title,
+        string Description,
+        List<string> Tags) : ICommand<ErrorOr<Success>>;
 }

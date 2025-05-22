@@ -1,8 +1,60 @@
 [
   {
+    "ContainingType": "Queans.Api.Answers.AnswerController",
+    "Method": "CreateAsnwer",
+    "RelativePath": "api",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "questionId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Answers.AnswerController",
+    "Method": "Get",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Answers.AnswerController",
+    "Method": "UpdateAnswer",
+    "RelativePath": "api/answers/{id}/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "GetQuestionWithAnswers",
-    "RelativePath": "api/question/{id}",
+    "RelativePath": "api/Question/question/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -18,7 +70,7 @@
   {
     "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "GetListOfQuestions",
-    "RelativePath": "api/questions",
+    "RelativePath": "api/Question/questions",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -27,8 +79,39 @@
   },
   {
     "ContainingType": "Queans.Api.Questions.QuestionController",
+    "Method": "UpdateQuestion",
+    "RelativePath": "api/Question/questions/{questionId}/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questionId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Tags",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "CreateQuestion",
-    "RelativePath": "api/questions/create",
+    "RelativePath": "api/Question/questions/create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -44,7 +127,7 @@
   {
     "ContainingType": "Queans.Api.Questions.QuestionController",
     "Method": "GetQuestionsByTagFiltering",
-    "RelativePath": "api/questions/filter-by-tags",
+    "RelativePath": "api/Question/questions/filter-by-tags",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

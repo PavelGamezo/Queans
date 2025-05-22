@@ -48,6 +48,21 @@ namespace Queans.Domain.Questions.Entities
             Rating += rating;
         }
 
+        public ErrorOr<Success> ChangeText(string text)
+        {
+            var textResult = AnswerText.Create(text);
+            if (textResult.IsError)
+            {
+                return textResult.Errors;
+            }
+
+            Text = textResult.Value;
+
+            DateOfUpdate = DateTime.UtcNow;
+
+            return Result.Success;
+        }
+
         public static ErrorOr<Answer> CreateAnswer(string text, User author, Question question,int rating)
         {
             var textResult = AnswerText.Create(text);

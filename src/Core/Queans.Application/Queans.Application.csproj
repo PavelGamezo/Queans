@@ -23,8 +23,12 @@
 
   <ItemGroup>
     <Folder Include="Answers\Queries\" />
-    <Folder Include="Tags\" />
+    <Folder Include="Questions\Commands\RemoveQuestion\" />
     <Folder Include="Questions\Events\" />
+    <Folder Include="Tags\Commands\CreateTag\" />
+    <Folder Include="Tags\Commands\DeleteTag\" />
+    <Folder Include="Tags\Commands\UpdateTag\" />
+    <Folder Include="Tags\Queries\" />
   </ItemGroup>
 
 </Project>

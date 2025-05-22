@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Queans.Api.Common.Errors;
 using Queans.Application.Questions.Commands.CreateQuestion;
+using Queans.Application.Questions.Commands.UpdateQuestion;
 using Queans.Application.Questions.Queries.GetQuestion;
 using Queans.Application.Questions.Queries.GetQuestionsByTags;
 using Queans.Application.Questions.Queries.GetQuestionsList;
@@ -10,7 +11,7 @@ using System.Security.Claims;
 
 namespace Queans.Api.Questions
 {
-    [Route("api/")]
+    [Route("api/[controller]")]
     public class QuestionController : ApiBaseController
     {
         private readonly ISender _sender;
@@ -66,6 +67,24 @@ namespace Queans.Api.Questions
                 return Unauthorized();
 
             var result = await _sender.Send(new CreateQuestionCommand(request.Title, request.Description, userId));
+
+            return result.Match(
+                onValueResult => Ok(onValueResult),
+                onErrorResult => Problem(onErrorResult));
+        }
+
+        [Authorize(Policy = "question-owner-or-admin")]
+        [Route("questions/{questionId}/update")]
+        [HttpPut]
+        public async Task<IActionResult> UpdateQuestion(
+            [FromRoute] Guid questionId,
+            [FromQuery] UpdateQuestionRequest request)
+        {
+            var result = await _sender.Send(new UpdateQuestionCommand(
+                questionId,
+                request.Title,
+                request.Description,
+                request.Tags));
 
             return result.Match(
                 onValueResult => Ok(onValueResult),

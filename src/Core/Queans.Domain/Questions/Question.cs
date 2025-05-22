@@ -77,6 +77,31 @@ namespace Queans.Domain.Questions
             Rating--;
         }
 
+        public ErrorOr<Success> UpdateQuestion(string title, string description, List<Tag> tags)
+        {
+            var descriptionCreatingResult = Description.CreateDescription(description);
+            if (descriptionCreatingResult.IsError)
+            {
+                return descriptionCreatingResult.Errors;
+            }
+
+            var titleCreatingResult = Title.Create(title);
+            if (titleCreatingResult.IsError)
+            {
+                return titleCreatingResult.Errors;
+            }
+
+            Description = descriptionCreatingResult.Value;
+            Title = titleCreatingResult.Value;
+            
+            _tags.Clear();
+            _tags.AddRange(tags);
+
+            DateOfUpdate = DateTime.UtcNow;
+
+            return Result.Success;
+        }
+
         public static ErrorOr<Question> CreateQuestion(
             int rating,
             User user,

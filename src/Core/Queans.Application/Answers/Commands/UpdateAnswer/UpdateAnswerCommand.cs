@@ -4,5 +4,5 @@ using Queans.Application.Common.DTOs;
 
 namespace Queans.Application.Answers.Commands.UpdateAnswer
 {
-    public record UpdateAnswerCommand(AnswerDto Answer) : ICommand<ErrorOr<Success>>;
+    public record UpdateAnswerCommand(Guid Id, string Text) : ICommand<ErrorOr<Success>>;
 }

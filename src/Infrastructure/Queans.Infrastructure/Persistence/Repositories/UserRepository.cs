@@ -51,7 +51,11 @@ namespace Queans.Infrastructure.Persistence.Repositories
 
         public async Task<bool> IsUserExistAsync(string email, string username, CancellationToken cancellationToken)
         {
-            var user = await _dbContext.Users.SingleOrDefaultAsync(user => user.UserEmail == email, cancellationToken);
+            var user = await _dbContext.Users
+                .SingleOrDefaultAsync(
+                    user => user.UserEmail == email,
+                    cancellationToken);
+
             if (user is null || user.UserName != username)
             {
                 return false;
@@ -81,7 +85,9 @@ namespace Queans.Infrastructure.Persistence.Repositories
         public async Task<Role?> GetUserRoleAsync(CancellationToken cancellationToken)
         {
             return await _dbContext.Roles
-                .SingleOrDefaultAsync(role => role.Name == RoleEnum.User.ToString(), cancellationToken);
+                .SingleOrDefaultAsync(
+                    role => role.Name == RoleEnum.User.ToString(),
+                    cancellationToken);
         }
     }
 }

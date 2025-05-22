@@ -23,5 +23,13 @@ namespace Queans.Application.Common.Errors
         public static Error NotFoundQuestionError = Error.NotFound(
             code: "Application.NotFound",
             description: "Question is not exist");
+
+        public static Error NotFoundAnswerError = Error.NotFound(
+            code: "Application.NotFound",
+            description: "Answer is not exist");
+        
+        public static Error NotFoundTagError = Error.NotFound(
+            code: "Application.NotFound",
+            description: "Tag is not exist");
     }
 }
