@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "Queans.Api.Users.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Queans.Api.Answers.AnswerController",
     "Method": "CreateAsnwer",
     "RelativePath": "api",
@@ -22,18 +32,24 @@
   },
   {
     "ContainingType": "Queans.Api.Answers.AnswerController",
-    "Method": "Get",
-    "RelativePath": "api",
-    "HttpMethod": "GET",
+    "Method": "RemoveAnswer",
+    "RelativePath": "api/answers/{answerId}/delete",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "answerId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Queans.Api.Answers.AnswerController",
     "Method": "UpdateAnswer",
-    "RelativePath": "api/answers/{id}/update",
+    "RelativePath": "api/answers/{answerId}/update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -41,12 +57,38 @@
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
         "Name": "text",
         "Type": "System.String",
         "IsRequired": true
+      },
+      {
+        "Name": "answerId",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Users.UserController",
+    "Method": "Login",
+    "RelativePath": "api/login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -142,39 +184,8 @@
   },
   {
     "ContainingType": "Queans.Api.Users.UserController",
-    "Method": "GetUser",
-    "RelativePath": "User",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Queans.Api.Users.UserController",
-    "Method": "Login",
-    "RelativePath": "User/Login",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "UserEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Queans.Api.Users.UserController",
     "Method": "Register",
-    "RelativePath": "User/Register",
+    "RelativePath": "api/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

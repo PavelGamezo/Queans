@@ -4,7 +4,7 @@ using Queans.Domain.Users.Events;
 
 namespace Queans.Application.Users.Events
 {
-    public class UserRoleCreatedNotification(ILogger<UserRoleCreatedNotification> logger)
+    public class UserRoleCreatedNotificationHandler(ILogger<UserRoleCreatedNotificationHandler> logger)
         : INotificationHandler<UserRoleCreatedEvent>
     {
         public Task Handle(UserRoleCreatedEvent notification, CancellationToken cancellationToken)

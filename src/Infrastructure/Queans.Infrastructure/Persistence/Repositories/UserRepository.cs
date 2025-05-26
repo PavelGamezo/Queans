@@ -89,5 +89,13 @@ namespace Queans.Infrastructure.Persistence.Repositories
                     role => role.Name == RoleEnum.User.ToString(),
                     cancellationToken);
         }
+
+        public async Task<Role?> GetAdminRoleAsync(CancellationToken cancellationToken)
+        {
+            return await _dbContext.Roles
+                .SingleOrDefaultAsync(
+                    role => role.Name == RoleEnum.Admin.ToString(),
+                    cancellationToken);
+        }
     }
 }

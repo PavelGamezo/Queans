@@ -2,6 +2,7 @@ using Queans.Api;
 using Queans.Api.Common.GlobalExceptions;
 using Queans.Application;
 using Queans.Infrastructure;
+using Queans.Infrastructure.Persistence;
 using Scalar.AspNetCore;
 using Serilog;
 
@@ -16,6 +17,8 @@ builder.Services
     .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
+
+await app.UseDatabaseSeeding();
 
 if (app.Environment.IsDevelopment())
 {

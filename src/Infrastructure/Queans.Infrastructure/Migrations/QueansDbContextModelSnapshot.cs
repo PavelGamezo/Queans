@@ -83,7 +83,7 @@ namespace Queans.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tag");
+                    b.ToTable("Tags");
                 });
 
             modelBuilder.Entity("Queans.Domain.Questions.Question", b =>

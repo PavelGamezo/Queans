@@ -1,4 +1,4 @@
-﻿namespace Queans.Domain.Voting.Enums
+﻿namespace Queans.Domain.Votes.Enums
 {
     public enum VoteType
     {

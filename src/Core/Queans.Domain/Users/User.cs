@@ -29,7 +29,7 @@ namespace Queans.Domain.Users
         public Rating Rating { get; private set; } = 0;
 
 
-        public User(
+        protected User(
             Guid id,
             string userName,
             Email userEmail,

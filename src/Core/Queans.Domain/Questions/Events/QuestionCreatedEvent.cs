@@ -2,5 +2,5 @@
 
 namespace Queans.Domain.Questions.Events
 {
-    public record QuestionCreatedEvent(Question question) : IDomainEvent;
+    public record QuestionCreatedEvent(Question Question) : IDomainEvent;
 }

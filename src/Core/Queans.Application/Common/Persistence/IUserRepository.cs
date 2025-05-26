@@ -9,6 +9,8 @@ namespace Queans.Application.Common.Persistence
 
         Task<Role?> GetUserRoleAsync(CancellationToken cancellationToken);
 
+        Task<Role?> GetAdminRoleAsync(CancellationToken cancellationToken);
+
         Task<bool> IsUserExistAsync(string email, string username, CancellationToken cancellationToken);
 
         Task<User?> GetUserByIdAsync(Guid id, CancellationToken cancellationToken);

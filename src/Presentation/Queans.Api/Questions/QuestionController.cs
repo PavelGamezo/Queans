@@ -56,7 +56,7 @@ namespace Queans.Api.Questions
                 onErrorResult => Problem(onErrorResult));
         }
 
-        [Authorize(Roles = "User, Admin")]
+        [Authorize]
         [Route("questions/create")]
         [HttpPost]
         public async Task<IActionResult> CreateQuestion([FromBody] CreateQuestionRequest request)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Queans.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1582973373e32bfa6d6628a177eda91ebbf4081")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b020f597dcb1461e5840102a35c96e07d9e49014")]
 [assembly: System.Reflection.AssemblyProductAttribute("Queans.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Queans.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

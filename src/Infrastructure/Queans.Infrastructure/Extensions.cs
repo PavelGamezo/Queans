@@ -1,19 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Queans.Application.Common.Authentications;
-using Queans.Application.Common.Persistence;
 using Queans.Application.Common.Services;
 using Queans.Infrastructure.Authentication;
 using Queans.Infrastructure.Authentication.Persistences;
 using Queans.Infrastructure.Common.Options;
-using Queans.Infrastructure.Persistence.Contexts;
-using Queans.Infrastructure.Persistence.Interceptors;
-using Queans.Infrastructure.Persistence.Repositories;
+using Queans.Infrastructure.Persistence;
 using Queans.Infrastructure.Services;
 using System.Text;
 
@@ -95,32 +91,6 @@ namespace Queans.Infrastructure
                     //    }
                     //};
                 });
-
-            return services;
-        }
-
-        public static IServiceCollection AddPersistence(
-            this IServiceCollection services,
-            IConfiguration configuration)
-        {
-            var connectionString = new ConnectionString();
-            configuration.Bind(ConnectionString.SectionName, connectionString);
-
-            services.AddSingleton(Options.Create(connectionString));
-
-            // Added DbContext
-            services.AddDbContext<QueansDbContext>(options =>
-            {
-                options.UseNpgsql(connectionString.Value);
-            });
-
-            services.AddScoped<PublishDomainEventsInterseptor>();
-
-            // Added repositories
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IQuestionRepository, QuestionRepository>();
-            services.AddScoped<IAnswerRepository, AnswerRepository>();
-            services.AddScoped<ITagRepository, TagRepository>();
 
             return services;
         }

@@ -7,7 +7,7 @@ using Queans.Application.Users.Queries.LoginUser;
 
 namespace Queans.Api.Users
 {
-    [Route("[controller]")]
+    [Route("api/")]
     public class UserController : ApiBaseController
     {
         private readonly ISender _sender;
@@ -18,7 +18,7 @@ namespace Queans.Api.Users
         }
 
         [HttpPost]
-        [Route("Register")]
+        [Route("register")]
         public async Task<IActionResult> Register(RegisterUserRequest request)
         {
             var result = await _sender.Send(new RegisterUserCommand(
@@ -32,7 +32,7 @@ namespace Queans.Api.Users
         }
 
         [HttpGet]
-        [Route("Login")]
+        [Route("login")]
         public async Task<IActionResult> Login([FromQuery]LoginUserRequest request)
         {
             var result = await _sender.Send(new LoginUserQuery(
@@ -56,7 +56,7 @@ namespace Queans.Api.Users
                 onErrorResult => Problem(onErrorResult));
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult GetUser()
         {
