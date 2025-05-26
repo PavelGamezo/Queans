@@ -20,6 +20,10 @@ namespace Queans.Application.Common.Errors
             code: "Application.Validation",
             description: "Invalid count of tags");
 
+        public static Error TagExistError = Error.Conflict(
+            code: "Application.Conflict",
+            description: "Tag is already exist");
+
         public static Error NotFoundQuestionError = Error.NotFound(
             code: "Application.NotFound",
             description: "Question is not exist");

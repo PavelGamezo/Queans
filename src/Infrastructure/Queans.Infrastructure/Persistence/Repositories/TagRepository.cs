@@ -45,5 +45,35 @@ namespace Queans.Infrastructure.Persistence.Repositories
                 .Where(tag => tagNames.Contains(tag.Name))
                 .ToListAsync();
         }
+
+        public async Task<bool> IsExistByNameAsync(string name, CancellationToken cancellationToken)
+        {
+            var tag = await _dbContext.Tags
+                .SingleOrDefaultAsync(
+                    tag => tag.Name == name,
+                    cancellationToken);
+
+            if (tag is null)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public async Task<bool> IsExistByIdAsync(Guid id, CancellationToken cancellationToken)
+        {
+            var tag = await _dbContext.Tags
+                .SingleOrDefaultAsync(
+                    tag => tag.Id == id,
+                    cancellationToken);
+
+            if (tag is null)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

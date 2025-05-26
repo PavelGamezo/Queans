@@ -32,5 +32,10 @@ namespace Queans.Domain.Questions.Entities
 
             return tag;
         }
+
+        public void UpdateTag(string name)
+        {
+            Name = name;
+        }
     }
 }

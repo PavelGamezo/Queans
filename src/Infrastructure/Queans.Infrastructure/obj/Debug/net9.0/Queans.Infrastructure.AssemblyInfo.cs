@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Queans.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b020f597dcb1461e5840102a35c96e07d9e49014")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fbc9bba27eea43effadf996645ada79219f7385")]
 [assembly: System.Reflection.AssemblyProductAttribute("Queans.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Queans.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

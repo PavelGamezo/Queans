@@ -197,5 +197,53 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Tags.TagController",
+    "Method": "DeleteTag",
+    "RelativePath": "api/tags/{id}/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Tags.TagController",
+    "Method": "CreateTag",
+    "RelativePath": "api/tags/create-tag",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Queans.Api.Tags.CreateTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Tags.TagController",
+    "Method": "UpdateTag",
+    "RelativePath": "api/tags/update-tag",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Queans.Api.Tags.UpdateTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
