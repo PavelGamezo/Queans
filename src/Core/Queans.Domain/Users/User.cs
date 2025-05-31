@@ -3,9 +3,10 @@ using Queans.Domain.Common;
 using Queans.Domain.Questions;
 using Queans.Domain.Questions.Entities;
 using Queans.Domain.Users.Entities;
-using Queans.Domain.Users.Errors;
 using Queans.Domain.Users.Events;
 using Queans.Domain.Users.ValueObjects;
+using Queans.Domain.Votes.Entities;
+using Queans.Domain.Votes.Enums;
 
 namespace Queans.Domain.Users
 {
@@ -19,6 +20,9 @@ namespace Queans.Domain.Users
 
         private readonly List<Answer>? _answers = new();
         public IReadOnlyCollection<Answer>? Answers => _answers;
+
+        private readonly List<Vote>? _votes = new();
+        public IReadOnlyCollection<Vote>? Votes => _votes;
 
         public string UserName { get; private set; } = string.Empty;
 
@@ -71,6 +75,18 @@ namespace Queans.Domain.Users
             _roles.Add(role);
 
             AddDomainEvent(new UserRoleCreatedEvent(Id, role.Id));
+        }
+
+        public void ChangeRating(VoteType voteType)
+        {
+            if ((int)voteType == 1)
+            {
+                Rating.UpvoteRating();
+            }
+            else
+            {
+                Rating.DownvoteRating();
+            }
         }
     }
 }

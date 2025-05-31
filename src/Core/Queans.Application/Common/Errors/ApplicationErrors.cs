@@ -35,5 +35,9 @@ namespace Queans.Application.Common.Errors
         public static Error NotFoundTagError = Error.NotFound(
             code: "Application.NotFound",
             description: "Tag is not exist");
+
+        public static Error UserAlreadyVotedError = Error.Conflict(
+            code: "Application.Conflict",
+            description: "User already voted for this question");
     }
 }

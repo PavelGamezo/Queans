@@ -4,6 +4,7 @@ using Queans.Domain.Questions;
 using Queans.Domain.Questions.Entities;
 using Queans.Domain.Users;
 using Queans.Domain.Users.Entities;
+using Queans.Domain.Votes.Entities;
 using Queans.Infrastructure.Persistence.Configurations;
 using Queans.Infrastructure.Persistence.Interceptors;
 
@@ -23,6 +24,8 @@ namespace Queans.Infrastructure.Persistence.Contexts
 
         public DbSet<Tag> Tags { get; set; }
 
+        public DbSet<Vote> Votes { get; set; }
+
         public QueansDbContext(DbContextOptions options,
             PublishDomainEventsInterseptor publishDomainEventsInterseptor) : base(options)
         {
@@ -35,13 +38,15 @@ namespace Queans.Infrastructure.Persistence.Contexts
             var roleConfiguration = new RoleConfiguration();
             var questionConfiguration = new QuestionConfiguration();
             var answerConfiguration = new AnswerConfiguration();
+            var voteConfiguration = new VoteConfiguration();
 
             modelBuilder
                 .Ignore<List<IDomainEvent>>()
                 .ApplyConfiguration(userConfiguration)
                 .ApplyConfiguration(roleConfiguration)
                 .ApplyConfiguration(questionConfiguration)
-                .ApplyConfiguration(answerConfiguration);
+                .ApplyConfiguration(answerConfiguration)
+                .ApplyConfiguration(voteConfiguration);
 
             base.OnModelCreating(modelBuilder);
         }

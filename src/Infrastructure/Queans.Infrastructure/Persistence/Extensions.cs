@@ -37,6 +37,7 @@ namespace Queans.Infrastructure.Persistence
             services.AddScoped<IQuestionRepository, QuestionRepository>();
             services.AddScoped<IAnswerRepository, AnswerRepository>();
             services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IVoteRepository, VoteRepository>();
 
             return services;
         }

@@ -24,7 +24,7 @@ namespace Queans.Infrastructure.Persistence.Repositories
             _dbContext.Remove(tag);
         }
 
-        public async Task<Tag> GetTagByIdAsync(Guid id, CancellationToken cancellationToken)
+        public async Task<Tag?> GetTagByIdAsync(Guid id, CancellationToken cancellationToken)
         {
             return await _dbContext.Tags.SingleOrDefaultAsync(tag => tag.Id == id);
         }

@@ -189,6 +189,32 @@ namespace Queans.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Queans.Domain.Votes.Entities.Vote", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("TargetId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("TargetType")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("VoteType")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId", "TargetId", "TargetType")
+                        .IsUnique();
+
+                    b.ToTable("Votes", (string)null);
+                });
+
             modelBuilder.Entity("Queans.Domain.Questions.Entities.Answer", b =>
                 {
                     b.HasOne("Queans.Domain.Users.User", "Author")
@@ -249,6 +275,17 @@ namespace Queans.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Queans.Domain.Votes.Entities.Vote", b =>
+                {
+                    b.HasOne("Queans.Domain.Users.User", "User")
+                        .WithMany("Votes")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Queans.Domain.Questions.Question", b =>
                 {
                     b.Navigation("Answers");
@@ -259,6 +296,8 @@ namespace Queans.Infrastructure.Migrations
                     b.Navigation("Answers");
 
                     b.Navigation("Questions");
+
+                    b.Navigation("Votes");
                 });
 #pragma warning restore 612, 618
         }

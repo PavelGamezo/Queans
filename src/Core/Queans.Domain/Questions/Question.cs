@@ -5,6 +5,7 @@ using Queans.Domain.Questions.Events;
 using Queans.Domain.Questions.ValueObjects;
 using Queans.Domain.Users;
 using Queans.Domain.Users.ValueObjects;
+using Queans.Domain.Votes.Enums;
 
 namespace Queans.Domain.Questions
 {
@@ -62,19 +63,13 @@ namespace Queans.Domain.Questions
             AddDomainEvent(new AnswerAddedEvent(answer.Id, Id));
         }
 
-        // TODO: 
-        // Create normal business logic for upvote/downvote Question
-        public void UpvoteQuestion()
-            => Rating++;
-
-        public void DownvoteQuestion()
+        public void ApplyVote(VoteType voteType)
         {
-            if (Rating == 0)
-            {
-                return;
-            }
+            Rating += (int)voteType;
+            
+            Author.ChangeRating(voteType);
 
-            Rating--;
+            DateOfUpdate = DateTime.UtcNow;
         }
 
         public ErrorOr<Success> UpdateQuestion(string title, string description, List<Tag> tags)

@@ -9,7 +9,7 @@ namespace Queans.Application.Common.Persistence
 
         Task<bool> IsExistByIdAsync(Guid id, CancellationToken cancellationToken);
 
-        Task<Tag> GetTagByIdAsync(Guid id, CancellationToken cancellationToken);
+        Task<Tag?> GetTagByIdAsync(Guid id, CancellationToken cancellationToken);
 
         Task<List<Tag>> GetExistingTags(List<string> tagNames, CancellationToken cancellationToken);
 
