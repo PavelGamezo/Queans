@@ -39,7 +39,7 @@ namespace Queans.Application.Questions.Commands.UpvoteQuestion
             var isVoteExist = await _voteRepository.IsVoteExistAsync(
                 userId, questionId, VoteTargetType.Question, cancellationToken);
 
-            if (!isVoteExist)
+            if (isVoteExist)
             {
                 return ApplicationErrors.UserAlreadyVotedError;
             }

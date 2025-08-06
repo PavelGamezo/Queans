@@ -2,6 +2,7 @@
 using Queans.Domain.Common;
 using Queans.Domain.Users;
 using Queans.Domain.Users.Errors;
+using Queans.Domain.Users.ValueObjects;
 using Queans.Domain.Votes.Enums;
 using Queans.Domain.Votes.Errors;
 
@@ -58,6 +59,11 @@ namespace Queans.Domain.Votes.Entities
                 targetId,
                 targetType,
                 voteType);
+        }
+
+        public void ApplyVote(VoteType voteType)
+        {
+            User.ChangeRating(voteType);
         }
     }
 }

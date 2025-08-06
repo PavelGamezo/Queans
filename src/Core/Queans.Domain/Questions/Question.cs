@@ -1,6 +1,7 @@
 ﻿using ErrorOr;
 using Queans.Domain.Common;
 using Queans.Domain.Questions.Entities;
+using Queans.Domain.Questions.Errors;
 using Queans.Domain.Questions.Events;
 using Queans.Domain.Questions.ValueObjects;
 using Queans.Domain.Users;
@@ -56,6 +57,11 @@ namespace Queans.Domain.Questions
             AddDomainEvent(new TagAddedEvent(tag.Id, Id));
         }
 
+        public void AddQuestionTagList(List<Tag> tags)
+        {
+            _tags.AddRange(tags);
+        }
+
         public void AddAnswer(Answer answer)
         {
             _answers.Add(answer);
@@ -102,6 +108,7 @@ namespace Queans.Domain.Questions
             User user,
             string title,
             string description,
+            List<Tag> tags,
             DateTime dateOfCreation)
         {
             var identifier = Guid.NewGuid();
@@ -118,6 +125,11 @@ namespace Queans.Domain.Questions
                 return descriptionResult.Errors;
             }
 
+            if (!tags.Any())
+            {
+                return QuestionDomainErrors.IncorrectTagNameInputError;
+            }
+
             var question = new Question(
                 identifier,
                 rating,
@@ -125,6 +137,8 @@ namespace Queans.Domain.Questions
                 titleResult.Value,
                 descriptionResult.Value,
                 dateOfCreation);
+
+            question.AddQuestionTagList(tags);
 
             question.AddDomainEvent(new QuestionCreatedEvent(question));
 

@@ -1,6 +1,7 @@
-﻿namespace Queans.Application.Answers.Commands.RemoveAnswer
+﻿using ErrorOr;
+using Queans.Application.Common.CQRS.Commands;
+
+namespace Queans.Application.Answers.Commands.RemoveAnswer
 {
-    internal class RemoveAnswerCommand
-    {
-    }
+    public record RemoveAnswerCommand(Guid AnswerId) : ICommand<ErrorOr<Success>>;
 }

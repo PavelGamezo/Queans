@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Queans.Api.Common.Errors;
 using Queans.Application.Answers.Commands.CreateAnswer;
+using Queans.Application.Answers.Commands.RemoveAnswer;
 using Queans.Application.Answers.Commands.UpdateAnswer;
 using System.Security.Claims;
 
@@ -18,10 +19,11 @@ namespace Queans.Api.Answers
             _sender = sender;
         }
 
-        [HttpPost]
         [Authorize]
+        [HttpPost]
+        [Route("questions/{questionId}/answers")]
         public async Task<IActionResult> CreateAsnwer(
-            [FromBody] string text,
+            [FromBody] CreateAnswerRequest request,
             [FromRoute] Guid questionId)
         {
             var userClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -30,35 +32,38 @@ namespace Queans.Api.Answers
                 return Unauthorized();
             }
 
-            var result = await _sender.Send(new CreateAnswerCommand(text, questionId, authorId));
+            var result = await _sender.Send(new CreateAnswerCommand(request.Text, questionId, authorId));
 
             return result.Match(
-                onValueResult => Ok(onValueResult),
+                onValueResult => Created(),
                 onErrorResult => Problem(onErrorResult));
         }
 
-        //TODO: AnswerOwnerOrAdminPolicy
         [Authorize(Policy = "answer-owner-or-admin")]
         [HttpPut]
         [Route("answers/{answerId}/update")]
         public async Task<IActionResult> UpdateAnswer(
-            [FromRoute] Guid id,
+            [FromRoute] Guid answerId,
             [FromBody] string text)
         {
-            var result = await _sender.Send(new UpdateAnswerCommand(id, text));
+            var result = await _sender.Send(new UpdateAnswerCommand(answerId, text));
 
             return result.Match(
-                onValueResult => Ok(onValueResult),
+                onValueResult => Accepted(),
                 onErrorResult => Problem(onErrorResult));
         }
 
-        // Delete
         [Authorize(Policy = "answer-owner-or-admin")]
         [HttpDelete]
         [Route("answers/{answerId}/delete")]
-        public async Task<IActionResult> RemoveAnswer()
+        public async Task<IActionResult> RemoveAnswer(
+            [FromRoute] Guid answerId)
         {
-            return Ok();
+            var result = await _sender.Send(new RemoveAnswerCommand(answerId));
+
+            return result.Match(
+                onValueResult => NoContent(),
+                onErrorResult => Problem(onErrorResult));
         }
     }
 }

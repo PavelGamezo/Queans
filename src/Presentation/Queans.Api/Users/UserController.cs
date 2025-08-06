@@ -27,7 +27,7 @@ namespace Queans.Api.Users
                 request.Password));
 
             return result.Match(
-                onValueResult => Ok(onValueResult),
+                onValueResult => Ok(),
                 onErrorResult => Problem(onErrorResult));
         }
 
@@ -54,13 +54,6 @@ namespace Queans.Api.Users
                     return Ok(onValueResult);
                 },
                 onErrorResult => Problem(onErrorResult));
-        }
-
-        [Authorize(Roles = "Admin")]
-        [HttpGet]
-        public IActionResult GetUser()
-        {
-            return Ok();
         }
     }
 }

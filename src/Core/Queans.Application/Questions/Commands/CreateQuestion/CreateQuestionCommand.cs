@@ -6,5 +6,6 @@ namespace Queans.Application.Questions.Commands.CreateQuestion
     public record CreateQuestionCommand(
         string Title,
         string Description, 
-        Guid AuthorId) : ICommand<ErrorOr<Success>>;
+        Guid AuthorId,
+        List<string> Tags) : ICommand<ErrorOr<Success>>;
 }

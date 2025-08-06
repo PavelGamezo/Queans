@@ -6,6 +6,7 @@ using Queans.Domain.Questions.ValueObjects;
 using Queans.Domain.Users;
 using Queans.Domain.Users.Errors;
 using Queans.Domain.Users.ValueObjects;
+using Queans.Domain.Votes.Enums;
 
 namespace Queans.Domain.Questions.Entities
 {
@@ -99,6 +100,15 @@ namespace Queans.Domain.Questions.Entities
             answer.AddDomainEvent(new AnswerCreatedEvent(answer.Id));
 
             return answer;
+        }
+
+        public void ApplyVote(VoteType voteType)
+        {
+            Rating += (int)voteType;
+
+            Author.ChangeRating(voteType);
+
+            DateOfUpdate = DateTime.UtcNow;
         }
     }
 }

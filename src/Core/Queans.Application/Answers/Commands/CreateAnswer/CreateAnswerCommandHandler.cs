@@ -9,11 +9,17 @@ namespace Queans.Application.Answers.Commands.CreateAnswer
     public class CreateAnswerCommandHandler : ICommandHandler<CreateAnswerCommand, ErrorOr<Success>>
     {
         private readonly IQuestionRepository _questionRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IAnswerRepository _answerRepository;
 
         public CreateAnswerCommandHandler(
-            IQuestionRepository questionRepository)
+            IQuestionRepository questionRepository,
+            IUserRepository userRepository,
+            IAnswerRepository answerRepository)
         {
             _questionRepository = questionRepository;
+            _userRepository = userRepository;
+            _answerRepository = answerRepository;
         }
 
         public async Task<ErrorOr<Success>> Handle(CreateAnswerCommand request, CancellationToken cancellationToken)
@@ -26,8 +32,8 @@ namespace Queans.Application.Answers.Commands.CreateAnswer
                 return ApplicationErrors.NotFoundQuestionError;
             }
 
-            var author = question.Author;
-            if (author.Id != authorId)
+            var author = await _userRepository.GetUserByIdAsync(authorId, cancellationToken);
+            if (author is null)
             {
                 return ApplicationErrors.NotFoundUser;
             }
@@ -40,7 +46,9 @@ namespace Queans.Application.Answers.Commands.CreateAnswer
 
             question.AddAnswer(answerCreationResult.Value);
 
-            await _questionRepository.SaveAsync(cancellationToken);
+            _answerRepository.AddAnswer(answerCreationResult.Value);
+
+            await _answerRepository.SaveAsync(cancellationToken);
 
             return Result.Success;
         }

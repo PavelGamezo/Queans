@@ -23,5 +23,9 @@ namespace Queans.Domain.Questions.Errors
         public static Error NotFoundQuestionError = Error.NotFound(
             code: "General.Validation",
             description: "Question is not exist");
+
+        public static Error EmptyTagListError = Error.Validation(
+            code: "General.Validation",
+            description: "Tag count must be more than 0");
     }
 }

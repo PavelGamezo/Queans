@@ -66,7 +66,7 @@ namespace Queans.Api.Questions
             if (userIdClaim is null || !Guid.TryParse(userIdClaim, out var userId))
                 return Unauthorized();
 
-            var result = await _sender.Send(new CreateQuestionCommand(request.Title, request.Description, userId));
+            var result = await _sender.Send(new CreateQuestionCommand(request.Title, request.Description, userId, request.Tags));
 
             return result.Match(
                 onValueResult => Ok(onValueResult),
@@ -78,7 +78,7 @@ namespace Queans.Api.Questions
         [HttpPut]
         public async Task<IActionResult> UpdateQuestion(
             [FromRoute] Guid questionId,
-            [FromQuery] UpdateQuestionRequest request)
+            [FromBody] UpdateQuestionRequest request)
         {
             var result = await _sender.Send(new UpdateQuestionCommand(
                 questionId,

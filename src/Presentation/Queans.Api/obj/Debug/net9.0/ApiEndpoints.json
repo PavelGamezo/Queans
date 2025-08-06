@@ -1,36 +1,5 @@
 [
   {
-    "ContainingType": "Queans.Api.Users.UserController",
-    "Method": "GetUser",
-    "RelativePath": "api",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Queans.Api.Answers.AnswerController",
-    "Method": "CreateAsnwer",
-    "RelativePath": "api",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "text",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "questionId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Queans.Api.Answers.AnswerController",
     "Method": "RemoveAnswer",
     "RelativePath": "api/answers/{answerId}/delete",
@@ -40,7 +9,7 @@
     "Parameters": [
       {
         "Name": "answerId",
-        "Type": "",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -55,18 +24,13 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "answerId",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "text",
         "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "answerId",
-        "Type": "",
         "IsRequired": true
       }
     ],
@@ -133,19 +97,9 @@
         "IsRequired": true
       },
       {
-        "Name": "Title",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Tags",
-        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Queans.Api.Questions.UpdateQuestionRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -178,6 +132,27 @@
         "Name": "tags",
         "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Answers.AnswerController",
+    "Method": "CreateAsnwer",
+    "RelativePath": "api/questions/{questionId}/answers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Queans.Api.Answers.CreateAnswerRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "questionId",
+        "Type": "System.Guid",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -241,6 +216,70 @@
       {
         "Name": "request",
         "Type": "Queans.Api.Tags.UpdateTagRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Votes.VoteController",
+    "Method": "DownvoteAnswer",
+    "RelativePath": "api/votes/answers/{answerId}/downvote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "answerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Votes.VoteController",
+    "Method": "UpvoteAnswer",
+    "RelativePath": "api/votes/answers/{answerId}/upvote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "answerId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Votes.VoteController",
+    "Method": "DownvoteQuestion",
+    "RelativePath": "api/votes/questions/{questionId}/downvote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questionId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Queans.Api.Votes.VoteController",
+    "Method": "UpvoteQuestion",
+    "RelativePath": "api/votes/questions/{questionId}/upvote",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questionId",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
