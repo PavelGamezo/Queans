@@ -1,0 +1,56 @@
+2025-08-06 13:41:53.124 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-06 13:41:53.638 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-06 13:41:53.654 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-06 13:41:53.658 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-06 13:41:53.661 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-06 13:41:53.667 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-06 13:41:58.046 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-08-06 13:41:59.864 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-06 13:42:00.270 +03:00 [INF] Now listening on: https://localhost:7008
+2025-08-06 13:42:00.271 +03:00 [INF] Now listening on: http://localhost:5210
+2025-08-06 13:42:00.331 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-06 13:42:00.332 +03:00 [INF] Hosting environment: Development
+2025-08-06 13:42:00.333 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api
+2025-08-06 14:12:09.588 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-06 14:12:09.902 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-08-06 14:12:09.914 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-06 14:12:09.917 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-08-06 14:12:09.920 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-08-06 14:12:09.926 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-08-06 14:12:18.228 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u)
+2025-08-06 14:12:19.941 +03:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-06 14:12:20.486 +03:00 [INF] Now listening on: https://localhost:7008
+2025-08-06 14:12:20.487 +03:00 [INF] Now listening on: http://localhost:5210
+2025-08-06 14:12:20.641 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-06 14:12:20.643 +03:00 [INF] Hosting environment: Development
+2025-08-06 14:12:20.645 +03:00 [INF] Content root path: D:\Программирование\C#\Projects\Queans\Queans\src\Presentation\Queans.Api
