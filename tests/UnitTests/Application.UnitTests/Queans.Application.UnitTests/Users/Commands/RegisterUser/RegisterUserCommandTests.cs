@@ -1,8 +1,6 @@
-﻿using ErrorOr;
-using FluentAssertions;
+﻿using FluentAssertions;
 using Moq;
 using Queans.Application.Common.DTOs;
-using Queans.Application.Common.Errors;
 using Queans.Application.Common.Persistence;
 using Queans.Application.Common.Services;
 using Queans.Application.UnitTests.Users.TestUtils;
@@ -74,7 +72,7 @@ namespace Queans.Application.UnitTests.Users.Commands.RegisterUser
             _mockUserRepository.Setup(r => r.IsUserExistAsync(
                 command.UserEmail,
                 command.UserName,
-                It.IsAny<CancellationToken>()))
+                default))
                 .ReturnsAsync(true);
 
             // Act
@@ -83,7 +81,6 @@ namespace Queans.Application.UnitTests.Users.Commands.RegisterUser
             // Assert
             result.IsError.Should().BeTrue();
             result.Errors.Should().NotBeEmpty();
-
         }
     }
 }

@@ -35,17 +35,22 @@ namespace CreateAnswerCommandHandlerTests
         {
             // Arrange
             // Get hold of a valid answer
-            var createAnswerCommand = CreateAnswerCommandUtil.CreateCommand();
-            var questionId = createAnswerCommand.QuestionId;
-            var authorId = createAnswerCommand.AuthorId;
-            var question = Mock.Of<Question>();
-            var author = Mock.Of<User>();
+            var user = User.Create("User Name", "user@gmail.com", "hashed_password", 0).Value;
+            var question = Question.CreateQuestion(
+                0,
+                user,
+                "Title",
+                "Description",
+                new List<Tag> { Tag.CreateTag("Tag Name").Value },
+                DateTime.UtcNow).Value;
 
-            _mockQuestionRepository.Setup(r => r.GetQuestionByIdAsync(questionId, It.IsAny<CancellationToken>()))
+            var createAnswerCommand = new CreateAnswerCommand("Text", question.Id, user.Id);
+
+            _mockQuestionRepository.Setup(r => r.GetQuestionByIdAsync(question.Id, It.IsAny<CancellationToken>()))
                 .ReturnsAsync(question);
 
-            _mockUserRepository.Setup(r => r.GetUserByIdAsync(authorId, It.IsAny<CancellationToken>()))
-                .ReturnsAsync(author);
+            _mockUserRepository.Setup(r => r.GetUserByIdAsync(user.Id, It.IsAny<CancellationToken>()))
+                .ReturnsAsync(user);
 
             // Act
             // Invoke the handler
