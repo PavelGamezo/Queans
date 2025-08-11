@@ -33,6 +33,11 @@ namespace Queans.Application.Questions.Commands.CreateQuestion
             }
 
             var existingTags = await _tagRepository.GetExistingTags(tags, cancellationToken);
+            if (existingTags is null)
+            {
+                return ApplicationErrors.NotFoundTagError;
+            }
+
             var missingTags = tags.Except(
                     existingTags.Select(
                         tag => tag.Name))

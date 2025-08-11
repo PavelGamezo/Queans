@@ -25,4 +25,8 @@
     <ProjectReference Include="..\..\..\..\src\Core\Queans.Domain\Queans.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Questions\Queries\" />
+  </ItemGroup>
+
 </Project>
