@@ -709,8 +709,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Common\\GlobalExceptions\\GlobalExceptionHandler.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAiwBwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T08:00:02.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T08:00:02.321Z"
             },
             {
               "$type": "Document",
@@ -722,8 +721,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Program.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:30:02.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T08:30:02.778Z"
             },
             {
               "$type": "Document",
@@ -735,8 +733,7 @@
               "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\Extensions.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAqwDUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T08:41:03.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T08:41:03.016Z"
             },
             {
               "$type": "Document",
@@ -748,8 +745,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Questions\\QuestionController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAewBoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T06:59:34.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T06:59:34.201Z"
             },
             {
               "$type": "Document",
@@ -759,7 +755,7 @@
               "RelativeDocumentMoniker": "src\\Core\\Queans.Domain\\Questions\\ValueObjects\\Description.cs",
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Questions\\ValueObjects\\Description.cs",
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Questions\\ValueObjects\\Description.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T18:32:32.627Z",
               "EditorCaption": ""
@@ -774,8 +770,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Questions\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T12:38:31.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T12:38:31.762Z"
             },
             {
               "$type": "Document",
@@ -787,8 +782,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Questions\\Queries\\GetQuestionsList\\GetQuestionsListQueryHandler.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAuwBkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T07:26:26.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T07:26:26.102Z"
             },
             {
               "$type": "Document",
@@ -800,8 +794,7 @@
               "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Persistence\\SeedDatas\\AdminSeeder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T07:59:17.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T07:59:17.424Z"
             },
             {
               "$type": "Document",
@@ -813,8 +806,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Common\\Behaviors\\LoggingBehavior.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAqwCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T16:04:03.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T16:04:03.077Z"
             },
             {
               "$type": "Document",
@@ -826,8 +818,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Extensions.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwBAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:34:20.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T10:34:20.557Z"
             },
             {
               "$type": "Document",
@@ -839,8 +830,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Common\\DTOs\\TagDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T07:22:08.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T07:22:08.147Z"
             },
             {
               "$type": "Document",
@@ -852,8 +842,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Common\\DTOs\\QuestionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T07:04:00.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T07:04:00.512Z"
             },
             {
               "$type": "Document",
@@ -865,8 +854,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Common\\Behaviors\\ValidationBehavior.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA8wCYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:07:53.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T19:07:53.064Z"
             },
             {
               "$type": "Document",
@@ -878,8 +866,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAiwBIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T09:37:26.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T09:37:26.876Z"
             },
             {
               "$type": "Document",
@@ -891,8 +878,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Questions\\ValueObjects\\Title.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T17:38:27.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T17:38:27.558Z"
             },
             {
               "$type": "Document",
@@ -904,8 +890,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Rating.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:20:43.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T13:20:43.047Z"
             },
             {
               "$type": "Document",
@@ -917,8 +902,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Questions\\Entities\\Tag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T07:50:11.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T07:50:11.616Z"
             },
             {
               "$type": "Document",
@@ -930,8 +914,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Domain\\Users\\ValueObjects\\Email.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:15:20.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T12:15:20.121Z"
             },
             {
               "$type": "Document",
@@ -943,8 +926,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-12T22:28:10.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T22:28:10.287Z"
             },
             {
               "$type": "Document",
@@ -956,8 +938,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Users\\UserController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAACkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T09:36:11.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T09:36:11.242Z"
             },
             {
               "$type": "Document",
@@ -968,8 +949,7 @@
               "ToolTip": "D:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435\\CSharp\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\Queans.Api.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-12T22:27:56.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T22:27:56.438Z"
             },
             {
               "$type": "Document",
@@ -981,8 +961,7 @@
               "RelativeToolTip": "src\\Presentation\\Queans.Api\\appsettings.json",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T10:12:51.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T10:12:51.191Z"
             },
             {
               "$type": "Document",
@@ -994,8 +973,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Users\\Queries\\LoginUser\\LoginUserQueryHandler.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAxwCwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T07:20:09.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T07:20:09.095Z"
             },
             {
               "$type": "Document",
@@ -1007,8 +985,7 @@
               "RelativeToolTip": "src\\Infrastructure\\Queans.Infrastructure\\Authentication\\JwtTokenGenerator.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAqwBUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T07:37:47.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T07:37:47.452Z"
             },
             {
               "$type": "Document",
@@ -1032,8 +1009,7 @@
               "RelativeToolTip": "tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Questions\\Commands\\CreateQuestion\\CreateQuestionCommandTests.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAMwHoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T12:52:52.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T12:52:52.588Z"
             },
             {
               "$type": "Document",
@@ -1093,8 +1069,7 @@
               "RelativeToolTip": "src\\Core\\Queans.Application\\Questions\\Commands\\CreateQuestion\\CreateQuestionCommandHandler.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAMwEAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T19:58:16.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T19:58:16.296Z"
             },
             {
               "$type": "Document",
@@ -1106,8 +1081,7 @@
               "RelativeToolTip": "tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Users\\Commands\\RegisterUser\\RegisterUserCommandTests.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAD4vzIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T13:37:53.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T13:37:53.134Z"
             },
             {
               "$type": "Document",
@@ -1131,8 +1105,7 @@
               "RelativeToolTip": "tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Answers\\Commands\\CreateAnswer\\CreateAnswerCommandHandlerTests.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowDIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T13:37:53.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T13:37:53.117Z"
             },
             {
               "$type": "Document",
@@ -1240,8 +1213,7 @@
               "RelativeToolTip": "tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Users\\Queries\\LoginUser\\LoginUserQueryTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T18:06:18.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T18:06:18.023Z"
             },
             {
               "$type": "Document",
