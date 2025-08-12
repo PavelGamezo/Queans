@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/k0/DzSBr7o=",
+  "dgSpecHash": "e4PWVTfTDaY=",
   "success": true,
-  "projectFilePath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj",
+  "projectFilePath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",

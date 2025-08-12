@@ -14,10 +14,26 @@ namespace Queans.Api
             services.AddTransient<GlobalExceptionHandler>();
 
             services.AddControllers();
+            services.AddCorsPolicy();
 
             services.AddOpenApi("v1", options => 
             {
                 options.AddDocumentTransformer<BearerSecuritySchemeTransformer>(); 
+            });
+
+            return services;
+        }
+
+        public static IServiceCollection AddCorsPolicy(this IServiceCollection services)
+        {
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.WithOrigins("http://localhost:5173");
+                    policy.AllowAnyHeader();
+                    policy.AllowAnyMethod();
+                });
             });
 
             return services;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hpQscSu02PY=",
+  "dgSpecHash": "wYV+elWDv1Q=",
   "success": true,
-  "projectFilePath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
+  "projectFilePath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\csharpfunctionalextensions\\3.6.0\\csharpfunctionalextensions.3.6.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",

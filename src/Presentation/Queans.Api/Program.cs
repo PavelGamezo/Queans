@@ -31,6 +31,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseCors();
+
 app.UseMiddleware<GlobalExceptionHandler>();
 
 app.UseHttpsRedirection();

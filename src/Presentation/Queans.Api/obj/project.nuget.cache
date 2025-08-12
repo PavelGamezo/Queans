@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Ss02IcNziE=",
+  "dgSpecHash": "z6r45v6h3KI=",
   "success": true,
-  "projectFilePath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
+  "projectFilePath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\csharpfunctionalextensions\\3.6.0\\csharpfunctionalextensions.3.6.0.nupkg.sha512",

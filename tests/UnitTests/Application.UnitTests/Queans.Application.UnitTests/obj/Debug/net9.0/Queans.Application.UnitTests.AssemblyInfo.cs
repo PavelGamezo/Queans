@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Queans.Application.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4cb21206270122a83820d8780930bed96445034")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09f4f961dd474e8838784443c6ad15f2c89f0bba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Queans.Application.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Queans.Application.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

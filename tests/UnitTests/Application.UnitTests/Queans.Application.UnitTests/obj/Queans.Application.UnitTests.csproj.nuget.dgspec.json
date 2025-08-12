@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj": {}
+    "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj": {}
   },
   "projects": {
-    "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj": {
+    "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj",
+        "projectUniqueName": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj",
         "projectName": "Queans.Application",
-        "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj",
+        "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\obj\\",
+        "outputPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
-                "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj"
+              "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
+                "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
+    "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
+        "projectUniqueName": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
         "projectName": "Queans.Domain",
-        "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
+        "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\obj\\",
+        "outputPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -186,14 +186,14 @@
         }
       }
     },
-    "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj": {
+    "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj",
+        "projectUniqueName": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj",
         "projectName": "Queans.Application.UnitTests",
-        "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj",
+        "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\Queans.Application.UnitTests.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\obj\\",
+        "outputPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\tests\\UnitTests\\Application.UnitTests\\Queans.Application.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -214,11 +214,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj": {
-                "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj"
+              "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj": {
+                "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj"
               },
-              "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
-                "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj"
+              "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj": {
+                "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj"
               }
             }
           }

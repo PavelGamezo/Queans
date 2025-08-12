@@ -192,11 +192,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
+      "projectUniqueName": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
       "projectName": "Queans.Domain",
-      "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
+      "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\Queans.Domain.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\obj\\",
+      "outputPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

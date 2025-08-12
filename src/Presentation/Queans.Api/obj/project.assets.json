@@ -4094,11 +4094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
+      "projectUniqueName": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
       "projectName": "Queans.Api",
-      "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
+      "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\Queans.Api.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\obj\\",
+      "outputPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Presentation\\Queans.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4119,11 +4119,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj": {
-              "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj"
+            "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj": {
+              "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Core\\Queans.Application\\Queans.Application.csproj"
             },
-            "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj": {
-              "projectPath": "D:\\Программирование\\C#\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj"
+            "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj": {
+              "projectPath": "D:\\Программирование\\CSharp\\Projects\\Queans\\Queans\\src\\Infrastructure\\Queans.Infrastructure\\Queans.Infrastructure.csproj"
             }
           }
         }
