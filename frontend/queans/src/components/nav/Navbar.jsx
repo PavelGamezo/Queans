@@ -1,7 +1,23 @@
-import { Flex, Link, Button, IconButton, useDisclosure } from '@chakra-ui/react';
+import Login from '@/pages/login';
+import { useState, useEffect } from "react";
+import { Flex, Button, Link as ChakraLink, IconButton, useDisclosure, Text } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
-  const { isOpen, onOpen, onClose } = useDisclosure(); // For mobile menu
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [token, setToken] = useState("");
+
+  useEffect(() => {
+    const savedToken = localStorage.getItem("token");
+    if (savedToken) {
+      setToken(savedToken);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setToken(""); // обновляем state
+  };
 
   return (
     <Flex as="nav" 
@@ -13,9 +29,9 @@ function Navbar() {
       borderColor="gray.200"
       borderStyle="solid">
       
-      <Link href="/" fontSize="xl" fontWeight="bold">
+      <ChakraLink to="/" href="/" fontSize="xl" fontWeight="bold">
         Queans
-      </Link>
+      </ChakraLink>
 
       <IconButton
         display={{ base: 'flex', md: 'none' }}
@@ -25,9 +41,19 @@ function Navbar() {
       />
 
       <Flex display={{ base: 'none', md: 'flex' }} ml={4}>
-        <Link href="/about" mr={4}>About</Link>
-        <Link href="/services" mr={4}>Services</Link>
-        <Button colorScheme="teal" variant="solid">Sign Up</Button>
+        <Link to="/services" mr={4}>About</Link>
+        <ChakraLink to="/" mr={4}>Services</ChakraLink>
+        {!token ? (
+          <Link to="/login" mr={4}>
+            <Button colorScheme="teal" variant="solid">
+              Sign Up
+            </Button>
+          </Link>
+        ) : (
+          <Button colorScheme="red" variant="outline" onClick={handleLogout}>
+            Log out
+          </Button>
+        )}
       </Flex>
 
       {isOpen && (
@@ -40,9 +66,11 @@ function Navbar() {
           mt={4}
           display={{ base: 'flex', md: 'none' }}
         >
-          <Link href="/about" py={2}>About</Link>
-          <Link href="/services" py={2}>Services</Link>
-          <Button colorScheme="teal" variant="solid" mt={2}>Sign Up</Button>
+          <Link to="/about" py={2}>About</Link>
+          <Link to="/" py={2}>Services</Link>
+          <Link to="/">
+            <Button colorScheme="teal" variant="solid" mt={2}>Sign Up</Button>
+          </Link>
         </Flex>
       )}
     </Flex>

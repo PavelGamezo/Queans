@@ -1,11 +1,9 @@
 ﻿using ErrorOr;
 using Queans.Application.Common.Authentications;
 using Queans.Application.Common.CQRS.Queries;
-using Queans.Application.Common.DTOs;
 using Queans.Application.Common.Errors;
 using Queans.Application.Common.Persistence;
 using Queans.Application.Common.Services;
-using Queans.Domain.Users;
 
 namespace Queans.Application.Users.Queries.LoginUser
 {
