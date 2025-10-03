@@ -5,6 +5,7 @@
         int Rating,
         string AuthorName,
         string Title,
+        string Description,
         List<TagDto> Tags,
         List<AnswerDto> Answers);
 }

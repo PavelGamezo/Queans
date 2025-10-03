@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Button, Card, Field, Input, Stack, Flex } from "@chakra-ui/react";
 import { PasswordInput } from '@/components/ui/password-input';
 import { fetchLogin } from '@/services/login';
+import RegisterForm from './Register';
+import { Link } from 'react-router-dom';
 
 function LoginForm () {
   const [errorMessage, setErrorMessage] = useState("");
@@ -16,7 +18,6 @@ function LoginForm () {
     setErrorMessage("");
   } catch (err) {
     if (err.response) {
-      console.log(err.response.data.title);
       setErrorMessage(err.response.data.title);
     } else {
       setErrorMessage("Не удалось подключиться к серверу");
@@ -48,12 +49,13 @@ function LoginForm () {
             <Field.Label>Password</Field.Label>
             <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)}/>
           </Field.Root>
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Login</Button>
           {errorMessage && (
             <p style={{ color: "red", marginTop: "10px" }}>
               {errorMessage}
             </p>
           )}
+          <p>Don't have any account? </p><Link to="/register">Register</Link>
         </Stack>
       </Card.Body>
     </Card.Root>

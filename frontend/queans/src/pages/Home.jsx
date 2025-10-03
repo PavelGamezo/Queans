@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react'
 import QuestionCard from '@/components/header/QuestionCard';
 import QuestionForm from '@/components/header/CreateQuestionForm';
-import { fetchQuestions } from '@/services/question'
+import { fetchQuestions } from '@/services/question';
 
 function Home () {
     const [questions, setQuestions] = useState([])
@@ -25,9 +26,11 @@ function Home () {
             <div className='flex flex-col w-2/3 gap-10'>
             <ul className='flex flex-col flex-1'>
                 {questions.map(q => (
-                <li key={q.id}>
-                    <QuestionCard rating={q.rating} authorName={q.authorName} title={q.title} tags={q.tags}/>
-                </li>
+                  <Link to={`/questions/${q.id}`}>
+                    <li key={q.id}>
+                        <QuestionCard rating={q.rating} authorName={q.authorName} title={q.title} tags={q.tags}/>
+                    </li>
+                  </Link>
                 ))}
             </ul>
             </div>

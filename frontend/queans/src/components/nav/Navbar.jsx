@@ -16,7 +16,7 @@ function Navbar() {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    setToken(""); // обновляем state
+    setToken("");
   };
 
   return (
@@ -46,7 +46,7 @@ function Navbar() {
         {!token ? (
           <Link to="/login" mr={4}>
             <Button colorScheme="teal" variant="solid">
-              Sign Up
+              Log In
             </Button>
           </Link>
         ) : (
@@ -69,7 +69,7 @@ function Navbar() {
           <Link to="/about" py={2}>About</Link>
           <Link to="/" py={2}>Services</Link>
           <Link to="/">
-            <Button colorScheme="teal" variant="solid" mt={2}>Sign Up</Button>
+            <Button colorScheme="teal" variant="solid" mt={2}>Log In</Button>
           </Link>
         </Flex>
       )}

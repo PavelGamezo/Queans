@@ -30,6 +30,7 @@ namespace Queans.Application.Questions.Queries.GetQuestion
                 Rating: question.Rating,
                 AuthorName: question.Author.UserName,
                 Title: question.Title,
+                Description: question.Description,
                 Tags: question.Tags.Select(
                     tag => new TagDto(
                         Id: tag.Id,
